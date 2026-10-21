@@ -19,3 +19,5 @@
 - Imported the user's Hevy export (52 sessions, 2024-03 to 2026-10) to
   `data/history.csv`; `data/history-summary.md` holds the analysis and proposed
   starting loads. Analyzer gained alias exclusions and a pounds column.
+- Added `data/track-state.md`: the live state of the six progression tracks in
+  kilograms, seeded from the imported history, with the rotation pointer at L1.
