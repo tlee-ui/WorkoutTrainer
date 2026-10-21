@@ -17,8 +17,8 @@ program can scale between 3 and 6 days without losing progress.
 | --- | --- |
 | `research/` | Raw research notes written by agents. Each file covers one topic, cites its sources, and separates evidence from coaching convention. Notes are the record of what was found and are not rewritten after the fact. |
 | `guide/` | The synthesized training guide. Each chapter draws on the research notes and gives rules and numbers a lifter can act on. |
-| `tools/` | Scripts to pull or import a Hevy log into `data/history.csv` and analyze it for starting loads and training history. |
-| `data/` | The normalized training log, its summary, and `track-state.md`, the live state of the progression tracks. Raw exports are gitignored. |
+| `tools/` | The Hevy integration: pull workouts over the API, apply the progression rules, push the nine routines with the new loads back to the app (`python3 tools/hevy_sync.py`). Also the CSV fallback and the history analyzer. |
+| `data/` | The normalized training log, its summary, `tracks.json` and `track-state.md` (the live state of the progression tracks), the track log, and the Hevy ids the tools need. Raw exports are gitignored. |
 | `templates/` | Weekly session templates for 3, 4, 5, and 6 training days, the per-lift progression rules, the rules for switching between week types, a Liftosaur export of the rotation, and a CSV log template. |
 
 ## Reading order
@@ -26,7 +26,7 @@ program can scale between 3 and 6 days without losing progress.
 1. `guide/00-overview.md` for the core principles in one page.
 2. `guide/03-flexible-scheduling.md` for how to run a 3-day week and a 6-day week on the same program.
 3. `templates/README.md` then the template for this week's day count.
-4. `guide/07-tracking-and-apps.md` to pick a mobile tracker and set up logging.
+4. `guide/07-tracking-and-apps.md` to pick a mobile tracker and set up logging; `tools/README.md` for the Hevy setup and the weekly sync.
 5. `research/` when you want the evidence behind a rule.
 
 ## The program in one paragraph

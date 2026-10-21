@@ -1,140 +1,139 @@
 #!/usr/bin/env python3
-"""Pull the full workout history from the Hevy API and write it to data/.
+"""Pull workouts from the Hevy API into data/history.csv.
 
 Usage:
-    HEVY_API_KEY=... python3 tools/hevy_pull.py [--inspect] [--since 2024-01-01]
+    HEVY_API_KEY=... python3 tools/hevy_pull.py            # incremental if data/hevy-state.json has last_pull, else full
+    python3 tools/hevy_pull.py --full                      # re-pull everything
+    python3 tools/hevy_pull.py --since 2024-01-01          # full pull, keep workouts on or after this date
+    python3 tools/hevy_pull.py --inspect                   # print one raw workout and exit
 
-Reads the key from the HEVY_API_KEY environment variable only. Never pass the
-key on the command line or commit it.
+Reads the key from the HEVY_API_KEY environment variable only.
 
 Outputs:
-    data/raw/hevy_workouts.jsonl   one workout JSON object per line (gitignored)
-    data/history.csv               normalized set-level log, see tools/README.md
+    data/history.csv                normalized set-level log (tools/README.md), merged
+    data/raw/hevy_workouts.jsonl    raw workout JSON, one per line (gitignored)
+    data/hevy-state.json            last_pull timestamp for the next incremental run
 
-The Hevy API is Pro-only. Endpoint and field names below follow the published
-API (GET /v1/workouts with page and pageSize, api-key header) as described in
-research/mobile-workout-trackers.md; the exact response schema could not be
-verified from the research sandbox. Run with --inspect first: it fetches one
-page, prints the raw JSON, and exits, so the field names can be checked and the
-FIELD MAP below adjusted if needed.
+Merge rules:
+    - Full pull: every row whose source is hevy-api or hevy-csv is replaced (both
+      describe the same Hevy account); rows from other sources (manual) are kept.
+    - Incremental pull (GET /workouts/events?since=last_pull): updated workouts
+      replace the rows with the same workout_id; deleted workouts drop them.
+      Rows from the old CSV import have no workout_id and are left alone, so run
+      one --full pull after the first API setup to replace the CSV import.
+
+Schema verified against the OpenAPI document at api.hevyapp.com/docs on
+2026-10-21: workouts carry title, start_time, exercises[].title,
+exercises[].sets[].{index, type, weight_kg, reps, rpe}; set types are normal,
+warmup, dropset, failure; RPE is per set and nullable.
 """
 import argparse
 import csv
 import json
 import os
 import sys
-import time
-import urllib.error
-import urllib.parse
-import urllib.request
 
-BASE = "https://api.hevyapp.com/v1"
-PAGE_SIZE = 10  # the API's documented maximum per page
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from hevy_api import HISTORY_COLUMNS, Hevy, HevyError, now_iso, workout_rows  # noqa: E402
 
-# FIELD MAP: adjust if --inspect shows different names.
-F_WORKOUTS = "workouts"
-F_PAGE_COUNT = "page_count"
-F_TITLE = "title"
-F_START = "start_time"
-F_EXERCISES = "exercises"
-F_EX_TITLE = "title"
-F_EX_NOTES = "notes"
-F_SETS = "sets"
-F_SET_INDEX = "index"
-F_SET_TYPE = "type"
-F_WEIGHT = "weight_kg"
-F_REPS = "reps"
-F_RPE = "rpe"
-
-HISTORY_COLUMNS = [
-    "date", "workout_title", "exercise", "set_index", "set_type",
-    "weight_kg", "reps", "rpe", "notes", "source",
-]
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HISTORY = os.path.join(ROOT, "data", "history.csv")
+RAW = os.path.join(ROOT, "data", "raw", "hevy_workouts.jsonl")
+STATE = os.path.join(ROOT, "data", "hevy-state.json")
 
 
-def get(path, key, params=None):
-    url = BASE + path
-    if params:
-        url += "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"api-key": key, "accept": "application/json"})
-    for attempt in range(5):
-        try:
-            with urllib.request.urlopen(req, timeout=60) as resp:
-                return json.load(resp)
-        except urllib.error.HTTPError as e:
-            if e.code in (401, 403):
-                sys.exit(f"Hevy API refused the key (HTTP {e.code}). Check HEVY_API_KEY and that the account has Pro.")
-            if e.code == 429 and attempt < 4:
-                time.sleep(2 ** attempt)
-                continue
-            raise
-        except urllib.error.URLError as e:
-            sys.exit(f"Could not reach {BASE}: {e.reason}. If this runs in a cloud sandbox, api.hevyapp.com must be on the environment's allowed domains.")
+def read_history(path):
+    if not os.path.exists(path):
+        return []
+    with open(path, newline="") as f:
+        return list(csv.DictReader(f))
 
 
-def iter_workouts(key):
-    page = 1
-    while True:
-        data = get("/workouts", key, {"page": page, "pageSize": PAGE_SIZE})
-        workouts = data.get(F_WORKOUTS, [])
-        for w in workouts:
-            yield w
-        page_count = data.get(F_PAGE_COUNT)
-        if not workouts or (page_count is not None and page >= page_count):
+def write_history(path, rows):
+    rows.sort(key=lambda r: (r.get("date", ""), r.get("workout_title", ""), r.get("workout_id", ""), r.get("exercise", ""), float(r.get("set_index") or 0)))
+    with open(path, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=HISTORY_COLUMNS, extrasaction="ignore")
+        w.writeheader()
+        for r in rows:
+            w.writerow({c: r.get(c, "") for c in HISTORY_COLUMNS})
+
+
+def load_state(path):
+    if os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)
+    return {}
+
+
+def save_state(path, state):
+    with open(path, "w") as f:
+        json.dump(state, f, indent=2)
+        f.write("\n")
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Pull Hevy workouts into data/history.csv.")
+    ap.add_argument("--inspect", action="store_true", help="print one raw workout as JSON and exit")
+    ap.add_argument("--full", action="store_true", help="re-pull all workouts instead of events since last_pull")
+    ap.add_argument("--since", help="full pull: keep workouts on or after this date (YYYY-MM-DD)")
+    ap.add_argument("--out", default=HISTORY)
+    ap.add_argument("--raw", default=RAW)
+    ap.add_argument("--state", default=STATE)
+    args = ap.parse_args(argv)
+
+    try:
+        h = Hevy()
+        if args.inspect:
+            for w in h.iter_workouts(max_pages=1):
+                print(json.dumps(w, indent=2, ensure_ascii=False))
+                break
             return
-        page += 1
 
+        state = load_state(args.state)
+        started = now_iso()
+        existing = read_history(args.out)
+        os.makedirs(os.path.dirname(args.raw), exist_ok=True)
+        incremental = bool(state.get("last_pull")) and not args.full and not args.since
 
-def workout_rows(w):
-    date = (w.get(F_START) or "")[:10]
-    title = w.get(F_TITLE, "")
-    for ex in w.get(F_EXERCISES, []):
-        for s in ex.get(F_SETS, []):
-            yield {
-                "date": date,
-                "workout_title": title,
-                "exercise": ex.get(F_EX_TITLE, ""),
-                "set_index": s.get(F_SET_INDEX, ""),
-                "set_type": s.get(F_SET_TYPE, "normal"),
-                "weight_kg": s.get(F_WEIGHT, ""),
-                "reps": s.get(F_REPS, ""),
-                "rpe": s.get(F_RPE, "") if s.get(F_RPE) is not None else "",
-                "notes": (ex.get(F_EX_NOTES) or "").replace("\n", " "),
-                "source": "hevy-api",
-            }
+        if incremental:
+            updated, deleted = {}, set()
+            for ev in h.iter_workout_events(state["last_pull"]):
+                if ev.get("type") == "deleted":
+                    deleted.add(ev.get("id"))
+                elif ev.get("type") == "updated" and ev.get("workout"):
+                    w = ev["workout"]
+                    updated.setdefault(w.get("id"), w)  # newest event first; keep it
+            touched = set(updated) | deleted
+            rows = [r for r in existing if r.get("workout_id") not in touched]
+            n_rows = 0
+            with open(args.raw, "a") as raw:
+                for wid, w in updated.items():
+                    raw.write(json.dumps(w) + "\n")
+                    for row in workout_rows(w):
+                        rows.append(row)
+                        n_rows += 1
+            write_history(args.out, rows)
+            print(f"Incremental pull since {state['last_pull']}: {len(updated)} updated, {len(deleted)} deleted workouts, {n_rows} sets -> {args.out}")
+        else:
+            rows = [r for r in existing if r.get("source") not in ("hevy-api", "hevy-csv")]
+            n_workouts = n_rows = 0
+            with open(args.raw, "w") as raw:
+                for w in h.iter_workouts():
+                    date = (w.get("start_time") or "")[:10]
+                    if args.since and date < args.since:
+                        continue
+                    raw.write(json.dumps(w) + "\n")
+                    n_workouts += 1
+                    for row in workout_rows(w):
+                        rows.append(row)
+                        n_rows += 1
+            write_history(args.out, rows)
+            print(f"Full pull: {n_workouts} workouts, {n_rows} sets -> {args.out} (raw JSON in {args.raw}); {len(existing) - sum(1 for r in existing if r.get('source') in ('hevy-api', 'hevy-csv'))} non-Hevy rows kept.")
 
-
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--inspect", action="store_true", help="fetch one page, print raw JSON, exit")
-    ap.add_argument("--since", help="keep workouts on or after this date (YYYY-MM-DD)")
-    ap.add_argument("--out", default="data/history.csv")
-    ap.add_argument("--raw", default="data/raw/hevy_workouts.jsonl")
-    args = ap.parse_args()
-
-    key = os.environ.get("HEVY_API_KEY")
-    if not key:
-        sys.exit("HEVY_API_KEY is not set. Store it as an environment secret, not in the repo.")
-
-    if args.inspect:
-        print(json.dumps(get("/workouts", key, {"page": 1, "pageSize": 1}), indent=2)[:6000])
-        return
-
-    os.makedirs(os.path.dirname(args.raw), exist_ok=True)
-    n_workouts = n_rows = 0
-    with open(args.raw, "w") as raw, open(args.out, "w", newline="") as out:
-        writer = csv.DictWriter(out, fieldnames=HISTORY_COLUMNS)
-        writer.writeheader()
-        for w in iter_workouts(key):
-            date = (w.get(F_START) or "")[:10]
-            if args.since and date < args.since:
-                continue
-            raw.write(json.dumps(w) + "\n")
-            n_workouts += 1
-            for row in workout_rows(w):
-                writer.writerow(row)
-                n_rows += 1
-    print(f"Wrote {n_workouts} workouts, {n_rows} sets to {args.out} (raw JSON in {args.raw}).")
+        state["last_pull"] = started
+        save_state(args.state, state)
+    except HevyError as e:
+        sys.exit(str(e))
 
 
 if __name__ == "__main__":

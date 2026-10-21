@@ -21,3 +21,17 @@
   starting loads. Analyzer gained alias exclusions and a pounds column.
 - Added `data/track-state.md`: the live state of the six progression tracks in
   kilograms, seeded from the imported history, with the rotation pointer at L1.
+- Hevy integration built out. Verified the Hevy public API schema against the
+  official OpenAPI document (addendum in `research/mobile-workout-trackers.md`:
+  per-set RPE confirmed, routine sets have no RPE, no webhooks or delete
+  endpoints). Added `tools/hevy_api.py` (client and inspector),
+  `tools/hevy_push_routines.py` (renders `templates/rotation.json` with the
+  loads in `data/tracks.json` into nine Hevy routines, creates or updates them
+  in place), `tools/update_tracks.py` (applies the increment, hold, miss, stall,
+  double-progression, gap and pointer rules to the pulled history),
+  `tools/hevy_sync.py` (pull, update, push) and `tools/test_tools.py`.
+  `tools/hevy_pull.py` now uses the verified schema, pulls incrementally
+  through workout events and carries a `workout_id` column.
+  `data/tracks.json` is the machine-readable track state; the table in
+  `data/track-state.md` is regenerated from it. Chapter 07 section 3.2 and the
+  READMEs describe the loop; `CLAUDE.md` tells agents how to run it.

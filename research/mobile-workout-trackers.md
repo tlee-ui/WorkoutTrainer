@@ -205,3 +205,38 @@ For a repo-maintained, flexible-frequency rotation with double progression, RPE/
 - Liftosaur history export format (CSV/JSON) and Premium price are unverified.
 - Hevy API routine schema and RPE support unverified; must be confirmed at api.hevyapp.com/docs before writing the sync script.
 - Boostcamp export capability unknown; if it exists, Boostcamp would rise in the ranking.
+
+---
+
+## Addendum 2026-10-21: Hevy public API verified against the OpenAPI document
+
+Last updated: 2026-10-21. The research sandbox for the main note could not open `api.hevyapp.com`. A later session could: `https://api.hevyapp.com/docs/` is a Swagger UI whose `swagger-ui-init.js` embeds the OpenAPI 3.0.0 document ("Hevy Public API Docs"). Everything below was read from that document, not from third-party SDKs, and resolves the gaps flagged in KQ2 and KQ5. Source: [Hevy API docs](https://api.hevyapp.com/docs/) (official, primary).
+
+**Access and terms.** "Currently, this API is only available to Hevy Pro users. You can get your key on our web app at https://hevy.com/settings?developer." Hevy states it makes "no guarantees that we won't completely change the structure or abandon the project entirely", and asks clients that poll hourly or daily not to send requests exactly at xx:00. Authentication is an `api-key` header. No rate limit is documented. An unauthenticated request returns HTTP 401.
+
+**Endpoints** (all under `/v1`):
+
+| Method and path | Purpose | Notes |
+|---|---|---|
+| `GET /workouts` | Paginated workouts | `page`, `pageSize` (max 10); response `{page, page_count, workouts[]}` |
+| `GET /workouts/count` | Total workouts | `{workout_count}` |
+| `GET /workouts/events` | Updates and deletes since a timestamp | `since` (ISO 8601), newest first; events are `{type: "updated", workout}` or `{type: "deleted", id, deleted_at}`; intended for keeping a local cache current |
+| `GET /workouts/{id}`, `POST /workouts`, `PUT /workouts/{id}` | Read, create, update a workout | Create requires `title, start_time, end_time, exercises`; `is_private` optional |
+| `GET /user/info` | Account info | `{data: {...}}` |
+| `GET /routines`, `GET /routines/{id}`, `POST /routines`, `PUT /routines/{id}` | Routines | `pageSize` max 10; POST returns 403 "Routine limit exceeded" on the free tier; PUT returns 404 if the routine is not the caller's |
+| `GET /routine_folders`, `GET /routine_folders/{id}`, `POST /routine_folders` | Folders | New folder is created at index 0 |
+| `GET /exercise_templates`, `GET /exercise_templates/{id}`, `POST /exercise_templates` | Exercise library | `pageSize` max 100; POST creates a custom exercise (`title, exercise_type, equipment_category, muscle_group, other_muscles`) |
+| `GET /exercise_history/{templateId}` | Every logged set of one exercise | `start_date`, `end_date`; entries carry `workout_id, workout_title, workout_start_time, weight_kg, reps, rpe, set_type` |
+| `GET/POST /body_measurements`, `GET/PUT /body_measurements/{date}` | Bodyweight and girths | `weight_kg, lean_mass_kg, fat_percent`, neck to calf in cm; POST returns 409 if the date exists |
+
+**Not in the published document:** any delete endpoint for routines or folders, and any webhook endpoint. The hevy-py README's webhook claim (KQ2) is therefore unverified against the official spec as of this date; treat it as absent.
+
+**Workout schema** (answers the per-set RPE gap in KQ2, KQ5 and chapter 07): `Workout {id, title, routine_id, description, start_time, end_time, updated_at, created_at, exercises[]}`; `exercises[] {index, title, notes, exercise_template_id, superset_id, sets[]}`; `sets[] {index, type, weight_kg, reps, distance_meters, duration_seconds, rpe, custom_metric}`. **`rpe` is a per-set, nullable number.** On `POST /workouts` it is an enum of 6, 7, 7.5, 8, 8.5, 9, 9.5, 10 (no 6.5). `type` is one of `normal`, `warmup`, `dropset`, `failure`. `weight_kg` is always kilograms whatever the app's display unit. `routine_id` links a workout to the routine it was started from.
+
+**Routine schema** (answers the routine-field gap): `Routine {id, title, folder_id, updated_at, created_at, exercises[]}`; `exercises[] {index, title, rest_seconds, notes, exercise_template_id, superset_id, sets[]}`; `sets[] {index, type, weight_kg, reps, rep_range {start, end}, distance_meters, duration_seconds, custom_metric}`. **Routine sets have no RPE field**, so RPE targets must go in the exercise `notes`. Request bodies are `{routine: {title, folder_id, notes, exercises[{exercise_template_id, superset_id, rest_seconds, notes, sets[...]}]}}`; `folder_id: null` puts the routine in "My Routines".
+
+**Exercise templates:** `{id, title, type, primary_muscle_group, secondary_muscle_groups[], equipment, is_custom, thumbnail_url}`. Built-in titles follow the pattern seen in the user's export ("Bench Press (Barbell)", "Squat (Barbell)", "Lat Pulldown (Cable)"). Custom exercise types: `weight_reps, reps_only, bodyweight_reps, bodyweight_assisted_reps, duration, weight_duration, distance_duration, short_distance_weight`. Equipment: `none, barbell, dumbbell, kettlebell, machine, plate, resistance_band, suspension, other`. Muscle groups: 20 values from `abdominals` to `other`.
+
+**Consequences for this repo** (inference): the agent-driven loop in chapter 07 section 3.2 is fully supported: push nine routines into a folder (`POST /routine_folders`, `POST /routines`), update loads weekly (`PUT /routines/{id}`), read history with RPE (`GET /workouts` or `/workouts/events?since=`), and read bodyweight (`GET /body_measurements`). The only missing pieces are webhooks (poll instead) and routine deletion (delete in the app). Implemented in `tools/hevy_api.py`, `hevy_pull.py`, `hevy_push_routines.py`, `update_tracks.py` and `hevy_sync.py`.
+
+**Still unverified:** rate limits (none documented); whether `pageSize` above the maximum returns 400 as documented; the exact built-in titles for exercises the user has not logged yet (the push tool tries a list of candidates and reports what did not match).

@@ -34,6 +34,28 @@ research resistance-training topics and turn the findings into a training guide.
 - Note paywall or copyright status when describing a named program, and
   describe rather than reproduce copyrighted material.
 
+## Hevy integration (`tools/`)
+
+The user logs in Hevy (Pro) and the repo talks to it over the Hevy API.
+
+- The key is the `HEVY_API_KEY` environment variable. Never ask for it in chat,
+  never print it, never write it to a file or commit.
+- `python3 tools/hevy_sync.py --dry-run` shows what a sync would do; without
+  the flag it pulls new workouts, applies `templates/progression-tracks.md` to
+  them, rewrites `data/tracks.json`, `data/track-state.md` and
+  `data/track-log.md`, and updates the nine routines in the app. Run it when
+  the user asks for their loads, their next session, or an update after
+  training. Commit the changed data files afterwards.
+- Read `data/tracks.json` for the current loads and the pointer (the next
+  half-session owed); `data/track-log.md` for what changed and why.
+- `templates/rotation.json` is the machine-readable rotation. When a markdown
+  template changes, change the JSON too and push the routines again.
+- A stall is only flagged; apply the reset with `--reset-on-stall` after
+  checking the recovery inputs with the user (section 6 of the tracks file).
+- Read-only questions ("what did I lift on Monday", "find the pulldown
+  template") go through `python3 tools/hevy_api.py <command>`.
+- Tests: `python3 tools/test_tools.py` (offline).
+
 ## Updating the guide
 
 1. Write or update the research note first.
