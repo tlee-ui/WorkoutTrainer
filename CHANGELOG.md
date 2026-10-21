@@ -25,3 +25,7 @@
   Liftosaur file from kilograms to pounds (5 lb squat and deadlift steps, 2.5 lb
   bench and press steps). Research notes and study citations stay in their
   source units.
+- Added `tools/hevy_push.py` and `tools/hevy_program.json`: write the pound loads
+  in `data/track-state.md` into the nine Hevy routines (dry run by default), so the
+  app is ready before each session. The existing routines still held the kilogram
+  loads. Research note addendum records the Hevy API spec, checked live.

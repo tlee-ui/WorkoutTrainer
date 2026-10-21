@@ -191,7 +191,7 @@ date,session,exercise,set,load,reps,rpe,notes
 
 ## Repository tooling
 
-The scripts in `tools/` implement the import side of the loop above: `hevy_pull.py` (API), `hevy_csv_import.py` (app export), and `analyze_history.py` (per-exercise e1RM history and proposed starting loads). See `tools/README.md`.
+The scripts in `tools/` implement the import side of the loop above: `hevy_pull.py` (API), `hevy_csv_import.py` (app export), and `analyze_history.py` (per-exercise e1RM history and proposed starting loads). `hevy_push.py` implements step 5 for Hevy Pro: it writes the loads in `data/track-state.md` into the nine routines, with a dry-run diff by default. The API spec, checked 2026-10-21, confirms per-set RPE in logged workouts but no RPE field in routine sets, so RPE targets live in the exercise notes (`research/mobile-workout-trackers.md`, addendum 2026-10-21). See `tools/README.md`.
 
 ## Sources
 
