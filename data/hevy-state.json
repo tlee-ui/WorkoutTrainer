@@ -1,0 +1,18 @@
+{
+  "last_pull": "2026-10-21T19:19:29Z",
+  "folder_id": 3922584,
+  "folder_title": "Rotation 2026-10",
+  "routines": {
+    "L1": "7dac15b4-bea1-4568-a858-090b43cf047b",
+    "U1": "9cad0a25-d481-4d76-839f-25f95a334bc3",
+    "L2": "aecb3247-a1a4-4a4a-bf40-9d776c8d05ef",
+    "U2": "f6effc09-1443-4067-a1f0-2a312ef8f391",
+    "L3": "bb6945b7-c9e9-4bfa-8626-b082d709e75c",
+    "U3": "6bf801f6-fd3e-471f-9dec-c798ac8e8f5b",
+    "Full A": "065ae9bd-875e-4c2b-b8a0-d612d5ea11d6",
+    "Full B": "1bfa567a-bbf4-4f9a-99c0-29662795f24f",
+    "Full C": "4d55d8b4-ab89-4022-9aba-a909e333b68c"
+  },
+  "last_push": "2026-10-21T19:20:23Z",
+  "last_push_deload": false
+}

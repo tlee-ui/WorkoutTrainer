@@ -198,7 +198,10 @@ class Hevy:
         return self.paginate("routine_folders", "routine_folders")
 
     def create_folder(self, title):
-        return self.post("/routine_folders", {"routine_folder": {"title": title}})
+        """The spec shows a bare RoutineFolder; the live API wraps it as
+        {"routine_folder": {...}}. Accept both."""
+        r = self.post("/routine_folders", {"routine_folder": {"title": title}})
+        return r.get("routine_folder", r) if isinstance(r, dict) else r
 
     def find_folder(self, title):
         for f in self.iter_folders():
@@ -252,7 +255,7 @@ def workout_rows(w, source="hevy-api"):
                 "exercise": ex.get("title") or "",
                 "set_index": s.get("index", ""),
                 "set_type": s.get("type") or "normal",
-                "weight_kg": "" if s.get("weight_kg") is None else s.get("weight_kg"),
+                "weight_kg": "" if s.get("weight_kg") is None else round(s.get("weight_kg"), 2),
                 "reps": "" if s.get("reps") is None else s.get("reps"),
                 "rpe": "" if s.get("rpe") is None else s.get("rpe"),
                 "notes": (ex.get("notes") or "").replace("\n", " ").replace(",", ";"),

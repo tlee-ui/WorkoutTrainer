@@ -35,3 +35,8 @@
   `data/tracks.json` is the machine-readable track state; the table in
   `data/track-state.md` is regenerated from it. Chapter 07 section 3.2 and the
   READMEs describe the loop; `CLAUDE.md` tells agents how to run it.
+- First live run against the user's account: full API pull (52 workouts, with
+  workout ids), all 25 program exercises matched to Hevy templates
+  (`data/hevy-exercise-map.json`), folder `Rotation 2026-10` and the nine
+  routines created (`data/hevy-state.json`). Folder-create and routine-get
+  responses are wrapped objects on the live API; client adjusted.

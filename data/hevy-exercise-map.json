@@ -1,0 +1,102 @@
+{
+  "Back squat": {
+    "hevy_title": "Squat (Barbell)",
+    "template_id": "D04AC939"
+  },
+  "Romanian deadlift": {
+    "hevy_title": "Romanian Deadlift (Barbell)",
+    "template_id": "2B4B7310"
+  },
+  "Leg press or split squat": {
+    "hevy_title": "Leg Press (Machine)",
+    "template_id": "C7973E0E"
+  },
+  "Seated leg curl": {
+    "hevy_title": "Seated Leg Curl (Machine)",
+    "template_id": "11A123F3"
+  },
+  "Standing calf raise": {
+    "hevy_title": "Standing Calf Raise (Machine)",
+    "template_id": "E05C2C38"
+  },
+  "Core": {
+    "hevy_title": "Cable Crunch",
+    "template_id": "23A48484"
+  },
+  "Bench press": {
+    "hevy_title": "Bench Press (Barbell)",
+    "template_id": "79D0BB3A"
+  },
+  "Barbell row": {
+    "hevy_title": "Bent Over Row (Barbell)",
+    "template_id": "55E6546F"
+  },
+  "Incline DB press": {
+    "hevy_title": "Incline Bench Press (Dumbbell)",
+    "template_id": "07B38369"
+  },
+  "Lateral raise": {
+    "hevy_title": "Lateral Raise (Dumbbell)",
+    "template_id": "422B08F1"
+  },
+  "Overhead triceps extension": {
+    "hevy_title": "Overhead Triceps Extension (Cable)",
+    "template_id": "B5EFBF9C"
+  },
+  "Face pull": {
+    "hevy_title": "Face Pull",
+    "template_id": "BE640BA0"
+  },
+  "Deadlift": {
+    "hevy_title": "Deadlift (Barbell)",
+    "template_id": "C6272009"
+  },
+  "Front squat or hack squat": {
+    "hevy_title": "Front Squat",
+    "template_id": "5046D0A9"
+  },
+  "Reverse lunge or split squat": {
+    "hevy_title": "Reverse Lunge (Dumbbell)",
+    "template_id": "FFDA283B"
+  },
+  "Back extension or Pallof press": {
+    "hevy_title": "Back Extension (Hyperextension)",
+    "template_id": "4F5866F8"
+  },
+  "Overhead press": {
+    "hevy_title": "Overhead Press (Barbell)",
+    "template_id": "7B8D84E8"
+  },
+  "Pull-up or pulldown": {
+    "hevy_title": "Lat Pulldown (Cable)",
+    "template_id": "6A6C31A5"
+  },
+  "Flat DB press or dips": {
+    "hevy_title": "Bench Press (Dumbbell)",
+    "template_id": "3601968B"
+  },
+  "Reverse pec deck": {
+    "hevy_title": "Rear Delt Reverse Fly (Machine)",
+    "template_id": "D8281C62"
+  },
+  "Cable lateral raise": {
+    "hevy_title": "Lateral Raise (Cable)",
+    "template_id": "BE289E45"
+  },
+  "Incline DB curl": {
+    "hevy_title": "Seated Incline Curl (Dumbbell)",
+    "template_id": "8BAB2735"
+  },
+  "Leg extension": {
+    "hevy_title": "Leg Extension (Machine)",
+    "template_id": "75A4F6C4"
+  },
+  "Triceps pushdown": {
+    "hevy_title": "Triceps Pushdown",
+    "template_id": "93A552C6"
+  },
+  "Preacher or EZ-bar curl": {
+    "hevy_title": "Preacher Curl (Machine)",
+    "template_id": "1E9A6B8E"
+  }
+}
