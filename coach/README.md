@@ -22,7 +22,7 @@ Agent instructions for the weekly coaching cadence in `guide/08-weekly-coaching-
 
 ## Rules every run follows
 
-1. **Branch.** Work on the branch named in the scheduled task's prompt. Fetch it first, then commit and push the files above at the end of the run. Other files are never touched by these runs.
+1. **Branch.** A scheduled session may start with no repository attached. If `tlee-ui/WorkoutTrainer` isn't checked out, attach it with push access (the session's add-repo tool), then clone it. Work on the branch named in the scheduled task's prompt. Fetch it first, then commit and push the files above at the end of the run. Other files are never touched by these runs.
 2. **Dates.** Get today's date with `TZ=America/New_York date +%F`. "Tomorrow" means tomorrow in that time zone.
 3. **Units.** Pounds everywhere the lifter sees. `data/history.csv` stores kilograms (x 0.45359237); convert when reading it.
 4. **Never** advance a load on a miss, during a deload, from a V exposure, or from a substitute lift (`guide/07-tracking-and-apps.md` §4).

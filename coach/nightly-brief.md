@@ -10,6 +10,7 @@ Protocol: `guide/08-weekly-coaching-cadence.md` section 3. General rules: `coach
    - Read `data/weekly-plan.md` and `data/track-state.md`.
    - Get today's date and tomorrow's: `TZ=America/New_York date +%F` and `TZ=America/New_York date -d tomorrow +%F`.
 2. **Check the plan's status.**
+   - **Tomorrow is before the plan's `Week of` date** (the first check-in hasn't happened yet): change nothing. End with one line: `Coaching starts with the check-in on Sun <date>, 6:47 pm.`
    - **`awaiting check-in`** and today is Monday: plan a provisional 3-day week (`coach/sunday-checkin.md`, "If there is no reply"). Then carry on.
    - **`awaiting check-in`** and today is later in the week: the lifter has gone quiet. Send one line asking how many days remain, and don't brief.
    - **`week over`** (Saturday run, plan finished): do nothing.
