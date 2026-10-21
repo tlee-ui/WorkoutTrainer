@@ -105,7 +105,7 @@ The Sunday check-in itself does not change with the day count. Only the number o
 
 ## 4. Where the data comes from
 
-- **Default: Hevy Pro API.** Both runs pull new workouts with `tools/hevy_pull.py`. That needs `HEVY_API_KEY` as an environment secret; never put it in the repo or the chat. Name each Hevy workout after its slot so a workout maps onto the rotation.
+- **Default: Hevy Pro API.** Both runs pull new workouts with `tools/hevy_pull.py`. That needs the Hevy key stored as a network secret for `api.hevyapp.com` (or as `HEVY_API_KEY`); never put it in the repo or the chat. Name each Hevy workout after its slot so a workout maps onto the rotation.
 - **Fallback: tell Claude.** When there is no key, or a pull fails, Claude asks for the top sets in the conversation. It records them in `data/manual-log.csv`, which uses the columns of `templates/log-template.csv` and is in pounds. `tools/analyze_history.py --history data/manual-log.csv` reads it.
 - **What is written:** `data/track-state.md` (tracks and pointer), `data/weekly-plan.md` (this week), `data/checkins/YYYY-MM-DD.md` (one record per Sunday). The scheduled sessions commit and push these, so the next run starts from them.
 

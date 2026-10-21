@@ -5,7 +5,7 @@ Python 3, standard library only.
 
 | Script | Purpose |
 |---|---|
-| `hevy_pull.py` | Pull the full workout history from the Hevy API (Pro required) into `data/history.csv`. Key read from the `HEVY_API_KEY` environment variable only. `--inspect` prints one raw page so the field names can be checked against the API docs before a full pull. |
+| `hevy_pull.py` | Pull the full workout history from the Hevy API (Pro required) into `data/history.csv`. Key read from the `HEVY_API_KEY` environment variable, or added by the sandbox proxy when it is stored as a network secret for `api.hevyapp.com`. `--inspect` prints one raw page so the field names can be checked against the API docs before a full pull. |
 | `hevy_csv_import.py` | Convert a CSV exported from the Hevy app (Profile > Settings > Export & Import Data) into `data/history.csv`. Works without Pro or network access. |
 | `analyze_history.py` | Summarize `data/history.csv`: sessions per year, per-exercise best e1RM, and proposed starting loads for the six main-lift progression tracks. Writes `data/history-summary.md`. |
 | `lift_aliases.json` | Maps the six main lifts to the exercise names used in the log. Edit to match your names; `analyze_history.py --list-exercises` shows them. |
@@ -51,11 +51,11 @@ python3 tools/analyze_history.py                    # writes data/history-summar
 sessions can read them. `data/raw/` is gitignored (large, and the API JSON may
 include fields you do not want in git). The API key is never written anywhere.
 
-## Unverified items
+## Verified 2026-10-21
 
-The Hevy API response schema (`workouts`, `page_count`, `exercises[].sets[].weight_kg`,
-`reps`, `rpe`, `index`, `type`) and the app export's column names follow the
-published API and the community SDK described in
-`research/mobile-workout-trackers.md`, but could not be checked against
-`api.hevyapp.com/docs` from the research sandbox. Both scripts print what they
-found so a mismatch is visible on the first run.
+A live pull returned 52 workouts and 685 sets: the same sets as the app's CSV export in `data/history.csv`. The fields `workouts`, `page_count`, `exercises[].sets[].weight_kg`, `reps`, `rpe`, `index` and `type` are as the script expects. Two differences:
+
+- The API's `start_time` is UTC. `hevy_pull.py` now converts it to the lifter's zone (`--tz`, default America/New_York), so evening sessions keep their local date.
+- A few exercise titles differ from the export (for example "Bulgarian Split Squat" vs "Bulgarian Split Squat (Dumbbell)"). None of them is a main lift.
+
+Routines: `PUT /v1/routines/{id}` with `{"routine": {"title", "exercises": [...]}}` works. Leave `rep_range` out of a set that has fixed `reps`; a null value is rejected. Weights are `weight_kg`. Write the pound value x 0.45359237 at full precision, so the app shows exact pounds.

@@ -53,4 +53,6 @@ From the recent log where one exists; otherwise choose on the day and record her
 
 ## Log format
 
+Hevy routines (folder "Rotation 2026-10", nine routines L1-U3 and Full A-C) were rewritten on 2026-10-21 from this table, in exact pounds: barbell in 5 lb steps, dumbbells in 2.5 lb steps. Rewrite them whenever a load in this table changes.
+
 Per set in Hevy, name the routine after the slot (L1, U1, ..., Full A, Full B, Full C) so exports map straight onto the rotation. Use Hevy's RPE field on top sets at minimum. After each H exposure, update the table above and append a line to the e1RM history. The Markdown fallback is `templates/log-template.csv`.

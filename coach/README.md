@@ -16,7 +16,7 @@ Agent instructions for the weekly coaching cadence in `guide/08-weekly-coaching-
 | `data/track-state.md` | both | both (after an H exposure, a miss, or a pointer move) |
 | `data/weekly-plan.md` | both | Sunday writes it; nightly amends it |
 | `data/checkins/YYYY-MM-DD.md` | Sunday reads the last one | Sunday |
-| `data/history.csv` | both | `tools/hevy_pull.py` (when `HEVY_API_KEY` is set) |
+| `data/history.csv` | both | `tools/hevy_pull.py` (when the Hevy API answers) |
 | `data/manual-log.csv` | both | both, when sets are reported in the chat (`templates/log-template.csv` columns, pounds) |
 | `templates/*.md` | both | never (the program is changed only by the CLAUDE.md update procedure) |
 
@@ -34,6 +34,6 @@ Agent instructions for the weekly coaching cadence in `guide/08-weekly-coaching-
 
 ## Getting the week's results
 
-1. If `HEVY_API_KEY` is set: `python3 tools/hevy_pull.py`. It rewrites `data/history.csv` from the full Hevy history. On the first run, or after a schema error, run `--inspect` and check the field names against `tools/README.md` "Unverified items" before trusting the output.
+1. Check the Hevy API: `curl -s -o /dev/null -w '%{http_code}' https://api.hevyapp.com/v1/workouts/count`. The key is stored as a network secret, and the proxy adds it to the request, so `HEVY_API_KEY` is usually **not** set; test the API, not the variable. If it returns 200: `python3 tools/hevy_pull.py`. It rewrites `data/history.csv` from the full Hevy history. On the first run, or after a schema error, run `--inspect` and check the field names against `tools/README.md` "Unverified items" before trusting the output.
 2. Rows whose `workout_title` is a slot name (L1-U3, Full A/B/C) map onto the rotation. A workout with another title: ask which slot it was.
-3. If there is no key, or the pull fails: take the results from the chat and append them to `data/manual-log.csv`. Mention the failure once in the message.
+3. If the API check doesn't return 200, or the pull fails: take the results from the chat and append them to `data/manual-log.csv`. Mention the failure once in the message.

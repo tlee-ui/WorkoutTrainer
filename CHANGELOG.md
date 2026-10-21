@@ -49,3 +49,11 @@
   2.5 lb per dumbbell (`templates/progression-tracks.md` sections 9 and 11, coach
   runbooks, `data/track-state.md`, Liftosaur `dp(2.5lb, ...)` on dumbbell lines).
   Why: the user confirmed their dumbbell rack.
+- Hevy routines rewritten in pounds. The nine "Rotation 2026-10" routines had been
+  built in kilograms (squat 60 kg showed as 132.3 lb, bench 42.5 kg as 93.7 lb). They
+  now carry the exact `data/track-state.md` loads (squat 135/125, bench 95/90, press
+  60/55, row 70, pulldown 125, V loads 120/85/55/65/115, accessories) with notes in
+  pounds. `tools/hevy_pull.py` now works when the key is a network secret the proxy
+  adds (no `HEVY_API_KEY` variable) and dates workouts in local time. The coach
+  runbooks check the API itself, not the variable. Why: the user reported odd load
+  sizes in Hevy.
