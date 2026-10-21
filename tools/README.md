@@ -19,9 +19,18 @@ routines in the app to reflect the latest logged sessions.
 ## Setup (once)
 
 1. Hevy Pro, and an API key from https://hevy.com/settings?developer.
-2. Put the key in the environment as `HEVY_API_KEY`. In a cloud session, add
-   it in the environment's settings as a secret or environment variable; a new
-   session picks it up. Never paste it into the chat, a file, or a commit.
+2. Give sessions the key, one of two ways. Never paste it into the chat, a
+   file, or a commit.
+   - **Network secret (preferred in a cloud environment).** Edit the cloud
+     environment, open **Network secrets**, **Add secret**. Secret type
+     **Bearer** (the default), name it anything (`Hevy`), allowed website
+     `api.hevyapp.com`, and in **Custom headers** set the header name to
+     `api-key`, clear the `Bearer` prefix, and paste the key as the value.
+     The proxy adds the header to every request to that host; the key never
+     enters the sandbox and no variable is needed.
+   - **Environment variable.** Add `HEVY_API_KEY` under the environment's
+     **Environment variables** (or export it in a local shell). The client then
+     sends the header itself.
 3. `python3 tools/hevy_api.py whoami` to confirm the key works.
 4. `python3 tools/hevy_pull.py --full` to replace the old CSV import with an
    API pull that carries workout ids and per-set RPE.

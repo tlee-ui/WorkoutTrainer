@@ -38,8 +38,11 @@ research resistance-training topics and turn the findings into a training guide.
 
 The user logs in Hevy (Pro) and the repo talks to it over the Hevy API.
 
-- The key is the `HEVY_API_KEY` environment variable. Never ask for it in chat,
-  never print it, never write it to a file or commit.
+- The key is either a cloud-environment network secret for `api.hevyapp.com`
+  (header `api-key`; the proxy adds it, nothing to configure in the session) or
+  the `HEVY_API_KEY` environment variable. Never ask for it in chat, never
+  print it, never write it to a file or commit. If a call returns 401, neither
+  is set up: tell the user how (`tools/README.md`, Setup step 2).
 - `python3 tools/hevy_sync.py --dry-run` shows what a sync would do; without
   the flag it pulls new workouts, applies `templates/progression-tracks.md` to
   them, rewrites `data/tracks.json`, `data/track-state.md` and

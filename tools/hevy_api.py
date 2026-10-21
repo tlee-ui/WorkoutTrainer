@@ -5,8 +5,9 @@ The schema here was read from the OpenAPI document embedded in
 https://api.hevyapp.com/docs/ on 2026-10-21 (see
 research/mobile-workout-trackers.md, addendum of that date). The API is
 Pro-only; the key comes from https://hevy.com/settings?developer and is read
-from the HEVY_API_KEY environment variable. Never pass it on the command line
-or write it into the repo.
+from the HEVY_API_KEY environment variable, or is attached by the cloud
+environment's proxy when a network secret exists for api.hevyapp.com (then no
+variable is needed). Never pass it on the command line or write it into the repo.
 
 Library use:
 
@@ -78,9 +79,14 @@ class HevyError(RuntimeError):
 
 class Hevy:
     def __init__(self, key=None, base=BASE, timeout=60, verbose=False):
+        # Two ways to supply the key. (1) HEVY_API_KEY in the environment: the
+        # client sends it in the api-key header itself. (2) A cloud-environment
+        # "network secret" for api.hevyapp.com with a custom header named
+        # api-key: the proxy adds the header after the request leaves the VM,
+        # so no variable is needed here and the key never enters the sandbox.
         self.key = key or os.environ.get("HEVY_API_KEY")
-        if not self.key:
-            raise HevyError("HEVY_API_KEY is not set. Store it as an environment secret, never in the repo.")
+        if not self.key and verbose:
+            print("HEVY_API_KEY not set; relying on a network secret for api.hevyapp.com", file=sys.stderr)
         self.base = base
         self.timeout = timeout
         self.verbose = verbose
@@ -93,7 +99,9 @@ class Hevy:
         if params:
             url += "?" + urllib.parse.urlencode({k: v for k, v in params.items() if v is not None})
         data = json.dumps(body).encode() if body is not None else None
-        headers = {"api-key": self.key, "accept": "application/json"}
+        headers = {"accept": "application/json"}
+        if self.key:
+            headers["api-key"] = self.key
         if data is not None:
             headers["content-type"] = "application/json"
         if self.verbose:
@@ -107,7 +115,8 @@ class Hevy:
             except urllib.error.HTTPError as e:
                 text = e.read().decode(errors="replace")[:500]
                 if e.code in (401, 403) and "limit" not in text.lower():
-                    raise HevyError(f"Hevy refused the key (HTTP {e.code}). Check HEVY_API_KEY and that the account has Pro. {text}")
+                    how = "HEVY_API_KEY" if self.key else "no HEVY_API_KEY is set and no network secret for api.hevyapp.com added an api-key header"
+                    raise HevyError(f"Hevy refused the request (HTTP {e.code}): {how}. The key comes from https://hevy.com/settings?developer and needs Pro. {text}")
                 if e.code in (429, 500, 502, 503, 504) and attempt < retries - 1:
                     time.sleep((2 ** attempt) + random.random())
                     continue
