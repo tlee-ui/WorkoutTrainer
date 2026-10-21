@@ -2,17 +2,18 @@
 
 Last updated: 2026-10-21
 
-How to move this project from one Claude account to another (for example, off a
-work account) without losing anything. The rule that makes it possible: **the
-GitHub repository is the only source of truth.** The Claude account holds only
-settings that can be recreated from this file.
+How to move this project off work accounts (Claude and GitHub) without losing
+anything. The rule that makes it possible: **the GitHub repository is the only
+source of truth.** The Claude account holds only settings that can be
+recreated from this file. The repo itself moves to a personal GitHub account
+with its full history (see "Moving the GitHub repo").
 
 ## What lives where
 
 | Item | Lives in | Moves with the repo? | What to do on a move |
 | --- | --- | --- | --- |
-| Research, guide, templates, tools, `CLAUDE.md` | GitHub repo `tlee-ui/WorkoutTrainer` (personal GitHub account) | Yes | Nothing |
-| Training log and track state (`data/`) | GitHub repo | Yes | Nothing |
+| Research, guide, templates, tools, `CLAUDE.md` | GitHub repo `tlee-ui/WorkoutTrainer` (work GitHub account) | Yes | Copy the repo to a personal GitHub account (below) |
+| Training log and track state (`data/`) | GitHub repo | Yes | Same |
 | Link between Claude and GitHub | Claude account (GitHub connection and Claude GitHub App) | No | Connect GitHub from the new Claude account |
 | Cloud environment: network access, Hevy secret | Claude account (environment settings) | No | Recreate from the spec below |
 | Hevy API key | Hevy account, plus a copy in the old environment | Key: yes. Copy: no | Regenerate the key, store it in the new environment |
@@ -26,13 +27,34 @@ menu in a session's title bar, then Edit).
 
 | Setting | Value |
 | --- | --- |
-| Repository | `tlee-ui/WorkoutTrainer` |
+| Repository | `tlee-ui/WorkoutTrainer` (change to the personal copy once it exists) |
 | Network access | Allow `api.hevyapp.com`. Research sessions also need web search and fetch. |
 | Hevy credential | A network secret for `api.hevyapp.com` that sends the key in the `api-key` header. Alternative: an environment variable named `HEVY_API_KEY`. `tools/hevy_pull.py` works with either. |
 | Setup script | None. The tools are Python 3 standard library only. |
 | Connectors | None. The project does not use Gmail, Calendar, Drive, or any other connector. |
 
 Never paste the key into a chat, a file in the repo, or a commit.
+
+## Moving the GitHub repo
+
+Commits are authored as `Claude <noreply@anthropic.com>`, and no credentials
+are committed, so the history can be copied as is.
+
+1. Create a personal GitHub account with a personal email.
+2. Copy the repo with every branch and commit, into a **private** repo:
+   - Without a command line: `https://github.com/new/import`, source URL
+     `https://github.com/tlee-ui/WorkoutTrainer.git`.
+   - Or from any computer with git:
+     `git clone --mirror https://github.com/tlee-ui/WorkoutTrainer.git`, then
+     in that folder `git push --mirror https://github.com/<you>/WorkoutTrainer.git`.
+3. To keep working from the work Claude account during the transition: on the
+   personal repo, invite the work GitHub user `tlee-ui` as a collaborator, and
+   install the Claude GitHub App on the personal repo
+   (`https://github.com/apps/claude/installations/select_target`). Work
+   sessions then push to the personal repo. Cutting the work side off later is
+   one click: remove the collaborator.
+4. Update the repo name in this file and start new sessions on the personal
+   repo. Archive or delete the copy under the work account.
 
 ## Migration checklist
 
