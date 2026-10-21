@@ -17,7 +17,7 @@ Protocol: `guide/08-weekly-coaching-cadence.md` section 3. General rules: `coach
 3. **Fold in today.**
    - If today was a planned training day, get the results (`coach/README.md`, "Getting the week's results").
    - If a slot was trained, update `data/track-state.md`:
-     - after an H exposure: increment, hold or miss (§5), stall reset (§6), add to the e1RM history, set the last-exposure date;
+     - after an H exposure: increment, hold or miss (§5; bench and press update the step counter), stall reset (§6), add to the e1RM history, set the last-exposure date;
      - after a V exposure: set the last-exposure date only;
      - move the pointer: +1 for a split session, +2 for a merged one.
    - Mark the day `done` in the plan.
@@ -34,12 +34,12 @@ Protocol: `guide/08-weekly-coaching-cadence.md` section 3. General rules: `coach
    - the deload form if the plan says deload.
    Fill in the loads:
    - main-lift top set from the track;
-   - back-offs = top x 0.93; V = 90% of track; rounded per §9;
+   - back-offs = top x 0.93; V = 90% of track; every barbell load rounded to the nearest 5 lb (§9);
    - the gap clock (§8) if this is the lift's first exposure since a gap;
-   - accessories from `data/track-state.md` "Accessory starting loads", or the last logged load per §11.
+   - accessories from `data/track-state.md` "Accessory starting loads", or the last logged load per §11. Give one load per exercise, never a range;
    Add:
-   - the warm-up ramp on the first compound: bar x 10, 40% x 8, 60% x 5, 80% x 2-3 of the top set, rounded to 5 lb;
-   - one feeder set at 60-70% for each later main lift;
+   - the warm-up ramp on the first compound: bar x 10, 40% x 8, 60% x 5, 80% x 2-3 of the top set, each rounded to the nearest 5 lb (never below the 45 lb bar);
+   - one feeder set at 60-70% for each later main lift, rounded to the nearest 5 lb (the empty 45 lb bar if that is lower);
    - the template's cut order as the "Short on time" line.
    Use the layout in `guide/08` §3.1.
 6. **Write and push.** Update `data/weekly-plan.md` with the tomorrow row, the brief sent, and the time. Commit with the message `Brief <tomorrow>: <slot>`, then push.

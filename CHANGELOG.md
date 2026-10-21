@@ -35,3 +35,13 @@
   state. Results come from the Hevy API when `HEVY_API_KEY` is set, otherwise
   from the chat. Why: the user asked for a personal-trainer rhythm; the program
   rules are unchanged.
+- Equipment: the lifter's smallest plate is 2.5 lb, so every barbell load is now a
+  multiple of 5 lb. Bench and press move 5 lb after every second successful heavy
+  top set (a step counter in `templates/progression-tracks.md` section 5 and
+  `data/track-state.md`), instead of the 2.5 lb steps that needed 1.25 lb plates.
+  All computed loads (back-offs, V sets, warm-ups, deloads, resets) round to the
+  nearest 5 lb. Accessory loads are a single weight, not a range. The guide 03
+  worked example, the guide 07 sample rows, the Liftosaur file, the coach runbooks
+  and the seeded week plan were recalculated. Rationale: addendum in
+  `research/periodization-and-progression.md`. Why: the user reported uneven
+  load sizes they could not build with their plates.

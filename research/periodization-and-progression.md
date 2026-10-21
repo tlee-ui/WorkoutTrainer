@@ -235,3 +235,12 @@ Log load, reps, sets, and RPE/RIR for every working set and derive a per-lift es
 ### Gaps
 - No peer-reviewed validation of the "differential RPE" or e1RM-trend method as a predictor of long-term progress was found.
 - The claim that experienced lifters rate within 0.5 RPE of true effort came from a vendor page with no citation and is not reported as fact.
+
+## Addendum 2026-10-21: progression without fractional plates
+
+Context: the lifter's smallest plate is 2.5 lb, so every barbell load is a multiple of 5 lb. The program's earlier +2.5 lb bench and press steps assumed 1.25 lb plates. This addendum records what the existing findings above say about that constraint. It adds no new search.
+
+- [Convention] The Texas Method raises squat and deadlift about 5 lb a week, and bench and press about every two weeks because those two alternate (KQ2, KQ6 above). A 5 lb step every second success on bench and press matches that pace.
+- [Convention] The beginner guide in KQ2 gives upper-body jumps of 1.25-2.5 kg (about 2.5-5 lb). A 5 lb jump is at the top of that range, so it is too big to take every week as the default.
+- Inference: the jump is large relative to a light lift (5 lb is about 8% of a 60 lb press). Taking it every second success keeps the average weekly step near 2.5 lb with only 5 lb plates on the bar. Double progression on reps (4, then 5, then 6 reps at a load before +5 lb) is the main alternative. It was not adopted because it would change the 4-rep top-set structure that the e1RM history and stall rules are built on.
+- Gap: no study comparing microloading with larger, less frequent jumps was searched for in this pass.

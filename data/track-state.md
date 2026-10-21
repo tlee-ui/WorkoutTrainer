@@ -1,6 +1,6 @@
 # Current track state
 
-Last updated: 2026-10-21. Units: pounds (the Hevy log is in pounds; `data/history.csv` stores kilograms internally and `tools/analyze_history.py` reports both).
+Last updated: 2026-10-21 (step counter and single loads added the same day). Units: pounds (the Hevy log is in pounds; `data/history.csv` stores kilograms internally and `tools/analyze_history.py` reports both).
 
 This file is the live state of the six main-lift tracks defined in `templates/progression-tracks.md`. Update it after every heavy (H) exposure. Agents read it to plan the next week.
 
@@ -15,39 +15,41 @@ This file is the live state of the six main-lift tracks defined in `templates/pr
 
 ## The six tracks
 
-Starting loads come from `data/history-summary.md` (80% of the estimated 1RM from the sets of 17-20 Oct 2026, rule in `templates/progression-tracks.md` section 2). Back-offs are the top set x 0.93, V sets 90% of the track load, both rounded to 5 lb. Proposed loads are rounded in pounds first (the analyzer's lb column).
+Starting loads come from `data/history-summary.md` (80% of the estimated 1RM from the sets of 17-20 Oct 2026, rule in `templates/progression-tracks.md` section 2). Back-offs are the top set x 0.93, V sets 90% of the track load, both rounded to the nearest 5 lb. Plates: the smallest is 2.5 lb, so every barbell load is a multiple of 5 lb (`templates/progression-tracks.md` §9). Proposed loads are rounded in pounds first (the analyzer's lb column).
 
-| Lift | Top set for next H (4 @ RPE 8) | Back-offs (x 4) | V exposure load | Rep target | Miss counter | Last exposure | e1RM history (lb) |
-|---|---|---|---|---|---|---|---|
-| Squat | **135** | 125 | 120 (4 x 6; 3 x 6 merged) | 4 | 0 | 2026-10-17 (135 x 8, 8, 8) | 172 (estimate from 17 Oct, 8s at no logged RPE) |
-| Bench press | **95** | 90 | 85 (4 x 6) | 4 | 0 | 2026-10-20 (95 x 8, 8, 6) | 121 |
-| Deadlift | **work up** | 2 x 4 at -7% of the load found | 90% of the load found (3 x 4) | 4 | 0 | 2025-04-14 | 185 (Sep 2024 peak, 155 x 6); none recent |
-| Overhead press | **60** | 55 | 55 (3 x 5) | 4 | 0 | 2026-10-17 (65 x 7, 5) | 79 |
-| Barbell row | **70** for 4 x 6-8 | n/a (double progression) | 65 (3 x 8-10) | 6-8 | 0 | 2026-10-18 (65 x 12, 12, 12) | 90 |
-| Pull-up / pulldown | **125** pulldown for 4 x 5-8 | n/a | 110-115 (3 x 6-8 at RPE 7) | 5-8 | 0 | 2026-10-17 (135 x 6, 6) | 161 |
+| Lift | Top set for next H (4 @ RPE 8) | Back-offs (x 4) | V exposure load | Rep target | Miss counter | Step counter (bench, press) | Last exposure | e1RM history (lb) |
+|---|---|---|---|---|---|---|---|---|
+| Squat | **135** | 125 | 120 (4 x 6; 3 x 6 merged) | 4 | 0 | n/a | 2026-10-17 (135 x 8, 8, 8) | 172 (estimate from 17 Oct, 8s at no logged RPE) |
+| Bench press | **95** | 90 | 85 (4 x 6) | 4 | 0 | 0 of 2 | 2026-10-20 (95 x 8, 8, 6) | 121 |
+| Deadlift | **work up** | 2 x 4 at -7% of the load found | 90% of the load found (3 x 4) | 4 | 0 | n/a | 2025-04-14 | 185 (Sep 2024 peak, 155 x 6); none recent |
+| Overhead press | **60** | 55 | 55 (3 x 5) | 4 | 0 | 0 of 2 | 2026-10-17 (65 x 7, 5) | 79 |
+| Barbell row | **70** for 4 x 6-8 | n/a (double progression) | 65 (3 x 8-10) | 6-8 | 0 | n/a | 2026-10-18 (65 x 12, 12, 12) | 90 |
+| Pull-up / pulldown | **125** pulldown for 4 x 5-8 | n/a | 115 (3 x 6-8 at RPE 7; 112.5 rounds up; nearest stack pin) | 5-8 | 0 | n/a | 2026-10-17 (135 x 6, 6) | 161 |
 
 Notes on each:
 
 - **Squat.** 135 will feel light against the 2024 peak (250 x 5). That is intended. If the top set comes in at RPE 7 or lower, section 5 allows +10 lb jumps until it stops; expect to reach 160-170 within three heavy exposures.
-- **Bench.** The recent 95 x 8 sets were at an unknown RPE. 95 x 4 should be about RPE 6-7; take the +5 lb jump when it is.
+- **Bench.** The recent 95 x 8 sets were at an unknown RPE. 95 x 4 should be about RPE 6-7; take the +5 lb jump when it is (RPE 7 or lower). At RPE 7.5-8 the step counter goes to 1 of 2 and the load holds; the next such top set adds 5 lb.
 - **Deadlift.** Untrained for 18 months. On the first L2 (or Full B): warm up, then 95 x 4, 115 x 4, 135 x 4, 145 x 4, adding 10 lb per set until 4 reps feel like RPE 8. Stop there, log that load as the track load, then do 2 back-offs at 93%. The 2024 history (155 x 6) suggests the stopping point will be somewhere between 135 and 155, but let the RPE decide.
-- **Overhead press.** 60 is 80% of the recent estimate. Fractional plates matter here: without 1.25 lb plates, add 5 lb every second successful exposure.
+- **Overhead press.** 60 is 80% of the recent estimate. With 2.5 lb as the smallest plate the jump is 5 lb, which is 8% of 60, so the press advances through the step counter: +5 lb after every second successful top set (RPE 7.5-8), or straight away at RPE 7 or lower.
 - **Row.** The recent rows were 12s at 65. 70 for 4 x 6-8 at RPE 8 may be light; if all four sets hit 8 at RPE 7 or lower, go straight to 75 next time.
 - **Pulldown.** Running as the pull-up track until a pulldown set at about bodyweight reaches 8 reps; then switch to the bar (section 2). You did bodyweight pull-ups for up to 8 in 2024, so this switch may come early.
 
 ## Accessory starting loads (double progression, first set with 2-3 reps in reserve)
 
+One load each. If the first set is easier than 2-3 reps in reserve, move up one dumbbell step next time; if harder, down one.
+
 From the recent log where one exists; otherwise choose on the day and record here.
 
 | Exercise (template slot) | Start | Source |
 |---|---|---|
-| Incline DB press (U1) | 2 x 35 lb dumbbells, 3 x 8-12 | Oct 2026 incline barbell 45 x 12 was an empty bar; 2024 incline DB 75 x 8 |
-| Lateral raise (U1, U2, U3) | 15-20 lb, 3 x 12-15 | 2024 peak 40 x 8; recent 30 lb e1RM estimate |
-| DB curl (U2, U3) | 25-30 lb, 3 x 8-12 | Recent 42 lb e1RM estimate; 2024 peak 50 x 8 |
-| Overhead triceps extension (U1) | 25-30 lb DB, 3 x 10-15 | Oct 2026 extensions logged |
+| Incline DB press (U1) | 35 lb dumbbells, 3 x 8-12 | Oct 2026 incline barbell 45 x 12 was an empty bar; 2024 incline DB 75 x 8 |
+| Lateral raise (U1, U2, U3) | 15 lb dumbbells, 3 x 12-15 | 2024 peak 40 x 8; recent 30 lb e1RM estimate |
+| DB curl (U2, U3) | 25 lb dumbbells, 3 x 8-12 | Recent 42 lb e1RM estimate; 2024 peak 50 x 8 |
+| Overhead triceps extension (U1) | 25 lb dumbbell, 3 x 10-15 | Oct 2026 extensions logged |
 | Lying or seated leg curl (L1, L2, L3) | choose on the day | Two sessions logged Oct 2026; load not carried over |
-| Romanian deadlift (L1) | 110 lb, 3 x 8-10 | One barbell RDL logged 18 Oct 2026; 2024 DB RDL 100 x 8 |
-| Reverse lunge or split squat (L2) | 2 x 30-35 lb, 3 x 10 per leg | Oct 2026 reverse lunge 30 x 16 |
+| Romanian deadlift (L1) | 110 lb barbell, 3 x 8-10 | One barbell RDL logged 18 Oct 2026; 2024 DB RDL 100 x 8 |
+| Reverse lunge or split squat (L2) | 30 lb dumbbells, 3 x 10 per leg | Oct 2026 reverse lunge 30 x 16 |
 
 ## Log format
 

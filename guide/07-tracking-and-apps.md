@@ -164,9 +164,9 @@ Session-level fields (bodyweight, sleep hours, readiness 1-5, pointer after the 
 
 ```
 date,session,exercise,set,load,reps,rpe,notes
-2026-11-03,L1,Back squat,1,125,4,8,H top e1RM 150 next H 127.5
-2026-11-03,L1,Back squat,2,117.5,4,7,H back-off 1 of 3
-2026-11-07,Full C,Pull-up,1,5,8,7,V added load kg
+2026-11-03,L1,Back squat,1,125,4,8,H top e1RM 150 next H 130
+2026-11-03,L1,Back squat,2,115,4,7,H back-off 1 of 3
+2026-11-07,Full C,Pull-up,1,10,8,7,V added load lb
 ```
 
 ### 5.3 Google Sheets specifics

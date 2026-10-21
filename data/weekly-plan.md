@@ -31,7 +31,7 @@ State values: planned, briefed, done, missed, moved.
 | Deadlift | work up to 4 @ 8 | 93% of the load found | 90% of the load found |
 | Press | 60 x 4 @ 8 | 55 | 55 |
 | Row | 70, 6-8 reps @ 8 | n/a | 65 |
-| Pulldown | 125, 5-8 reps @ 8 | n/a | 110-115 |
+| Pulldown | 125, 5-8 reps @ 8 | n/a | 115 |
 
 Gap check for the first week: the lifts were last trained 17-20 Oct 2026. If the first session is on or before 27-28 Oct, every lift is at 7-11 days. The 8-14-day row of `templates/progression-tracks.md` §8 is a hold, and these loads already are the starting loads, so nothing changes.
 

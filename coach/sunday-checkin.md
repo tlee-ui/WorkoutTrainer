@@ -44,7 +44,7 @@ If a session has no logged data, add it to question 1. Ask for its top sets; don
 ## Turn 2: plan and deliver (after the lifter replies)
 
 1. **Fold in last week.** Add any results reported in the chat to `data/manual-log.csv`. Then update each track in `data/track-state.md` from its H exposure:
-   - increment, hold or miss per §5;
+   - increment, hold or miss per §5 (bench and press: update the step counter);
    - stall reset per §6;
    - add to the e1RM history (§10);
    - set the last-exposure date.
@@ -62,7 +62,7 @@ If a session has no logged data, add it to question 1. Ask for its top sets; don
    - 2 days: `guide/03` §4.6. 7 days: train 6.
 5. **Loads.**
    - Apply the gap clock (§8) to each main lift for its first exposure this week.
-   - Back-offs are the top set x 0.93; V sets are 90% of the track load. Round to 5 lb, or 2.5 lb on bench and press when fractional plates are on hand (§9).
+   - Back-offs are the top set x 0.93; V sets are 90% of the track load. Round every barbell load to the nearest 5 lb; the smallest plate is 2.5 lb (§9). Dumbbells and machines: one load, the nearest the gym has, never a range. Bench and press advance through the step counter (§5).
    - If deloading: top sets x 0.90-0.92 at RPE 6-7, one back-off, V at 2 sets, accessories 1-2 sets.
 6. **Cardio**: place it per `guide/03` §7.
 7. **Write the files.**

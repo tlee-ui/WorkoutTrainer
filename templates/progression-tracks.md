@@ -1,12 +1,12 @@
 # Progression tracks for the main lifts
 
-Last updated: 2026-10-21
+Last updated: 2026-10-21 (equipment addendum: 5 lb barbell steps, same date)
 
 This file holds the exact progression rules for the six main lifts (squat, bench press, deadlift, overhead press, barbell row, pull-up or pulldown) and the accessory rule the templates use. `guide/04-periodization-and-progression.md` explains the options and the evidence; this file states the one scheme this program runs. `guide/03-flexible-scheduling.md` says when each exposure happens.
 
 Design: each lift has **one track**. The track's state is a top-set load (row and pull-up: a track load), a rep target, a miss counter, the date of its last exposure, and an e1RM history. The track updates at the lift's **heavy (H) exposure** and is read by its **volume (V) exposure**. Day count never touches the track: every 3- to 6-day week contains exactly one H and one V exposure per lift.
 
-Units: pounds (5 lb is about 2.3 kg; 2.5 lb is about 1.1 kg). Increments: 5 lb for squat and deadlift; 2.5 lb for bench and press (1.25 lb plates), or 5 lb every second successful exposure without fractional plates.
+Units: pounds (5 lb is about 2.3 kg). Equipment: the smallest plate is 2.5 lb, so every barbell load is a multiple of 5 lb (bar 45 lb, then pairs of plates). Increments: 5 lb for squat and deadlift after every successful H; 5 lb for bench and press after every **second** successful H (the step counter, section 5). There are no 2.5 lb or 1.25 lb barbell steps.
 
 ---
 
@@ -15,9 +15,9 @@ Units: pounds (5 lb is about 2.3 kg; 2.5 lb is about 1.1 kg). Increments: 5 lb f
 | Lift | H exposure (slot) | V exposure (slot) | H structure, split session | H structure, merged session | V structure, split / merged | Increment after a successful H |
 |---|---|---|---|---|---|---|
 | Squat | L1 | L3 | 1 x 4 top set @ RPE 8, then 3 x 4 at -7% | top set, then 2 x 4 at -7% | 4 x 6 / 3 x 6 at 90% of the top-set load | +5 lb |
-| Bench press | U1 | U3 | 1 x 4 @ 8, then 3 x 4 at -7% | top set, then 2 x 4 | 4 x 6 / 3 x 6 at 90% | +2.5 lb |
+| Bench press | U1 | U3 | 1 x 4 @ 8, then 3 x 4 at -7% | top set, then 2 x 4 | 4 x 6 / 3 x 6 at 90% | +5 lb after every second successful H |
 | Deadlift | L2 | L3 | 1 x 4 @ 8, then 2 x 4 at -7% | top set, then 2 x 4 | 3 x 4 / 2 x 4 at 90% | +5 lb |
-| Overhead press | U2 | U3 | 1 x 4 @ 8, then 3 x 4 at -7% | top set, then 2 x 4 | 3 x 5 / 2 x 5 at 90% | +2.5 lb |
+| Overhead press | U2 | U3 | 1 x 4 @ 8, then 3 x 4 at -7% | top set, then 2 x 4 | 3 x 5 / 2 x 5 at 90% | +5 lb after every second successful H |
 | Barbell row | U1 | U3 | 4 x 6-8 @ RPE 8 (double progression) | 3 x 6-8 | 3 x 8-10 / 3 x 8-10 at 90% of the track load | +5 lb when every set reaches 8 |
 | Pull-up or pulldown | U2 | U3 | 4 x 5-8 @ RPE 8 (double progression) | 3 x 5-8 | 3 x 6-8 / 2 x 6-8 with load reduced to RPE 7 | +5 lb added load when every set reaches 8 |
 
@@ -75,15 +75,17 @@ Decide the next H load from the top set only. Back-off performance never changes
 
 | Top set result | Next H top-set load | Miss counter |
 |---|---|---|
-| 4 reps at RPE 7 or lower | +10 lb squat and deadlift, +5 lb bench and press (one-off; if it happens at two consecutive H exposures the start load was too low, keep taking the big step until it stops) | reset to 0 |
-| 4 reps at RPE 7.5-8 | **+5 lb squat and deadlift, +2.5 lb bench and press** | reset to 0 |
+| 4 reps at RPE 7 or lower | +10 lb squat and deadlift, +5 lb bench and press straight away, and the bench/press step counter goes back to 0 (one-off; if it happens at two consecutive H exposures the start load was too low, keep taking the big step until it stops) | reset to 0 |
+| 4 reps at RPE 7.5-8 | **+5 lb squat and deadlift.** Bench and press: step counter +1; at 2, **+5 lb** and the counter goes back to 0; at 1, hold the load | reset to 0 |
 | 4 reps at RPE 8.5-9 | **Hold** the load | unchanged |
 | 4 reps at RPE 9.5-10, or 3 reps or fewer | **Hold** the load | +1 |
 | Two misses in a row at the same load | **Stall**: section 6 | reset after the reset |
 
-Expected pace: squat and deadlift about +5 lb per week (the Texas Method's weekly pace, `research/periodization-and-progression.md`, Q2), bench and press about +2.5 lb per week (about half the Texas Method's fortnightly 5 lb). A lifter who makes every top set for 12 weeks adds 60 lb to the squat top set; nobody does, which is what the hold and stall rules are for.
+**Step counter (bench and press only).** The smallest plate is 2.5 lb, so the smallest barbell jump is 5 lb. That is too big a jump for the upper-body lifts every week, so bench and press take it every second success. The counter counts successful H top sets (4 reps at RPE 7.5-8) since the last increase. A hold (RPE 8.5-9) leaves it unchanged. A miss, a stall reset, a deload, or a big step after an RPE 7 or lower clears it to 0. The counter is recorded in `data/track-state.md`.
 
-Row and pull-up (double progression, `guide/04-periodization-and-progression.md`, section 2.2): fixed load; add reps each H exposure until every set reaches the top of the range (8) at RPE 8 or less; then +5 lb and back to the bottom of the range (6 for the row, 5 for the pull-up). A merged session runs 3 sets instead of 4; the rule still applies to the sets done. If the first set cannot reach the bottom of the range, hold the load and count a miss; two misses, drop 5% and rebuild.
+Expected pace: squat and deadlift about +5 lb per week (the Texas Method's weekly pace, `research/periodization-and-progression.md`, Q2), bench and press about +5 lb every two weeks (the Texas Method's fortnightly 5 lb). A lifter who makes every top set for 12 weeks adds 60 lb to the squat top set; nobody does, which is what the hold and stall rules are for.
+
+Row and pull-up (double progression, `guide/04-periodization-and-progression.md`, section 2.2): fixed load; add reps each H exposure until every set reaches the top of the range (8) at RPE 8 or less; then +5 lb and back to the bottom of the range (6 for the row, 5 for the pull-up). A merged session runs 3 sets instead of 4; the rule still applies to the sets done. If the first set cannot reach the bottom of the range, hold the load and count a miss; two misses, drop 5 lb (10 lb if the track load is over 150) and rebuild.
 
 ---
 
@@ -134,8 +136,9 @@ This table is an inference from detraining timelines (one week off: 3-7% strengt
 
 ## 9. Rounding and equipment
 
-- Squat and deadlift: 5 lb steps. Bench and press: 2.5 lb steps with 1.25 lb plates; without them, 5 lb every second successful exposure.
-- Back-off and V loads: compute, then round to the nearest loadable weight. Record the loaded weight, not the computed one.
+- **Plates.** The smallest plate is 2.5 lb, so every barbell load is a multiple of 5 lb. Squat and deadlift step 5 lb per success; bench and press step 5 lb every second success (section 5).
+- **Every computed load is rounded to the nearest 5 lb before it is written down.** That covers back-offs (x 0.93), V sets (x 0.90), warm-up ramps, deloads (x 0.90-0.92), gap reductions (5-10%) and stall resets (7.5%). An exact half-step (for example 112.5) rounds up. Record the loaded weight, not the computed one. No plan, brief or log shows a load that is not a multiple of 5 lb.
+- **Dumbbells and machines.** Use the nearest weight the gym has (dumbbells usually come in 5 lb steps, some racks in 2.5 lb steps). A plan or brief names one load, never a range.
 - If a session must use a substitute for a main lift (travel, equipment), the substitute does **not** update the track and does not count as an exposure for the gap clock. Strength is modality- and range-specific (Haugen 2023; Pallares 2019; `research/exercise-selection-and-session-design.md`, KQ7); keep the barbell lift itself at least once a week.
 - Dumbbell bench runs at roughly 35-40% of the barbell load per hand; treat any substitute as a new baseline and progress it by double progression.
 
@@ -169,7 +172,7 @@ This table is an inference from detraining timelines (one week off: 3-7% strengt
 - **Starting load:** one you can lift for the bottom of the range with 2-3 reps in reserve.
 - **Dynamic variant** for lifters who log set by set: increase load on a specific set only if that set exceeded the range last time (Helms' Muscle and Strength Pyramid description, `research/periodization-and-progression.md`, Q2).
 - **Short weeks** skip some sets of an accessory; they never reset its load.
-- **Stall:** two exposures without a rep gained at a load, drop 5% and rebuild, or swap to a same-length alternative (seated curl for lying curl, overhead for neutral triceps) at a block boundary. Rotate accessories every 4-8 weeks or when they stall, not session to session (`guide/05-exercise-selection.md`, section 8).
+- **Stall:** two exposures without a rep gained at a load, drop one step (5 lb on a barbell or stack, one dumbbell step) and rebuild, or swap to a same-length alternative (seated curl for lying curl, overhead for neutral triceps) at a block boundary. Rotate accessories every 4-8 weeks or when they stall, not session to session (`guide/05-exercise-selection.md`, section 8).
 - Triple progression (reps, then sets, then load) is available for accessories you train in every week type, but the extra set is the first thing a short week removes, so it is not the default.
 
 ---

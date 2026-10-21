@@ -65,8 +65,8 @@ Why anything changed: nothing; all tracks normal.
 2. Bench press (bench H)   feeder 60 x 5
    95 x 4 @ RPE 8, then 2 x 4 @ 90          rest 3-4 min, then 2-3
 3. Barbell row (row H)     3 x 6-8 @ 70, RPE 8 every set
-4. Seated leg curl         3 x 10-15, RPE 8-9
-5a/5b Lateral raise 4 x 12-20 (15-20 lb) / OH triceps ext 3 x 10-15 (25-30 lb)
+4. Seated leg curl         3 x 10-15 @ <logged load>, RPE 8-9
+5a/5b Lateral raise 4 x 12-20 @ 15 / OH triceps ext 3 x 10-15 @ 25
 6. Standing calf raise     3 x 8-12
 Short on time: cut calves to 2, triceps to 2, lateral raise to 3.
 After: log in Hevy as "Full A", or reply with the top sets and RPE.
@@ -74,7 +74,7 @@ After: log in Hevy as "Full A", or reply with the top sets and RPE.
 
 Rules for the brief:
 
-- Loads in pounds, rounded per `templates/progression-tracks.md` §9. Back-offs are the top set x 0.93 and V sets are 90% of the track load, both rounded to 5 lb.
+- Loads in pounds. The smallest plate is 2.5 lb, so every barbell load is a multiple of 5 lb, warm-ups included (`templates/progression-tracks.md` §9). Back-offs are the top set x 0.93 and V sets are 90% of the track load, both rounded to the nearest 5 lb. Dumbbell and machine work gets one load, never a range.
 - **The planned load is a plan. The RPE decides on the day.** If the top set is above RPE 8 at the planned load, follow §3-5 of the tracks file. Claude reads the result the next night.
 - The warm-up ramp is for the first compound only (bar x 10, 40% x 8, 60% x 5, 80% x 2-3). Each later main lift gets one feeder set at 60-70%.
 - One line, "why anything changed", names any rule that fired: gap hold, miss, stall reset, deload, or substitution.
