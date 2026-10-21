@@ -25,3 +25,8 @@
   Liftosaur file from kilograms to pounds (5 lb squat and deadlift steps, 2.5 lb
   bench and press steps). Research notes and study citations stay in their
   source units.
+- Added `PORTABILITY.md` and a portability section in `CLAUDE.md` so the project
+  can move off the current Claude account: inventory of what is account-bound,
+  the cloud environment spec, and a migration checklist. `tools/hevy_pull.py`
+  now also runs when the Hevy key is injected by a network secret instead of
+  the `HEVY_API_KEY` variable, so it works the same in either setup.

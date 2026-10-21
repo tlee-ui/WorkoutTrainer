@@ -19,6 +19,7 @@ program can scale between 3 and 6 days without losing progress.
 | `guide/` | The synthesized training guide. Each chapter draws on the research notes and gives rules and numbers a lifter can act on. |
 | `tools/` | Scripts to pull or import a Hevy log into `data/history.csv` and analyze it for starting loads and training history. |
 | `data/` | The normalized training log, its summary, and `track-state.md`, the live state of the progression tracks. Raw exports are gitignored. |
+| `PORTABILITY.md` | What lives in the repo versus the Claude account, the cloud environment spec, and the checklist for moving to another account. |
 | `templates/` | Weekly session templates for 3, 4, 5, and 6 training days, the per-lift progression rules, the rules for switching between week types, a Liftosaur export of the rotation, and a CSV log template. |
 
 ## Reading order

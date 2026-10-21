@@ -41,6 +41,18 @@ research resistance-training topics and turn the findings into a training guide.
 3. Update any template the change affects.
 4. Add a line to `CHANGELOG.md` describing what changed and why.
 
+## Portability
+
+The repo must be movable to another Claude account at any time. See
+`PORTABILITY.md`.
+
+- Commit and push anything worth keeping. Do not leave results only in a chat,
+  an artifact, memory, or a scheduled task.
+- Read credentials from the environment. Never write them to the repo.
+- Do not use work connectors or work systems for this project.
+- When a change needs a new package, host, secret, or scheduled task, update
+  the spec in `PORTABILITY.md` in the same commit.
+
 ## Style
 
 - Markdown. Tables for comparisons. Short sentences.

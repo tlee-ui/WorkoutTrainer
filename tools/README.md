@@ -32,8 +32,8 @@ Python 3, standard library only.
 ## Typical flow
 
 ```bash
-# Option A: API (Pro). Needs HEVY_API_KEY as an environment secret and
-# api.hevyapp.com allowed by the sandbox's network policy.
+# Option A: API (Pro). Needs the key as HEVY_API_KEY or as a network secret
+# for api.hevyapp.com, and that host allowed. See PORTABILITY.md.
 python3 tools/hevy_pull.py --inspect          # check field names once
 python3 tools/hevy_pull.py                    # full pull
 

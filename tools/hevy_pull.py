@@ -5,7 +5,9 @@ Usage:
     HEVY_API_KEY=... python3 tools/hevy_pull.py [--inspect] [--since 2024-01-01]
 
 Reads the key from the HEVY_API_KEY environment variable only. Never pass the
-key on the command line or commit it.
+key on the command line or commit it. If the variable is unset, the request is
+sent without the header, which works where a network secret injects it (a
+Claude Code cloud environment). See PORTABILITY.md.
 
 Outputs:
     data/raw/hevy_workouts.jsonl   one workout JSON object per line (gitignored)
@@ -56,14 +58,17 @@ def get(path, key, params=None):
     url = BASE + path
     if params:
         url += "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"api-key": key, "accept": "application/json"})
+    headers = {"accept": "application/json"}
+    if key:
+        headers["api-key"] = key
+    req = urllib.request.Request(url, headers=headers)
     for attempt in range(5):
         try:
             with urllib.request.urlopen(req, timeout=60) as resp:
                 return json.load(resp)
         except urllib.error.HTTPError as e:
             if e.code in (401, 403):
-                sys.exit(f"Hevy API refused the key (HTTP {e.code}). Check HEVY_API_KEY and that the account has Pro.")
+                sys.exit(f"Hevy API refused the key (HTTP {e.code}). Set HEVY_API_KEY or the environment's network secret for api.hevyapp.com, and check the account has Pro.")
             if e.code == 429 and attempt < 4:
                 time.sleep(2 ** attempt)
                 continue
@@ -114,7 +119,7 @@ def main():
 
     key = os.environ.get("HEVY_API_KEY")
     if not key:
-        sys.exit("HEVY_API_KEY is not set. Store it as an environment secret, not in the repo.")
+        print("HEVY_API_KEY is not set; relying on an injected network secret.", file=sys.stderr)
 
     if args.inspect:
         print(json.dumps(get("/workouts", key, {"page": 1, "pageSize": 1}), indent=2)[:6000])
