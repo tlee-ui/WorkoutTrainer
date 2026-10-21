@@ -16,3 +16,6 @@
   `templates/liftosaur/`, and `templates/log-template.csv`.
 - Added `tools/`: Hevy API pull, Hevy CSV import, history analysis that proposes
   starting loads per the progression tracks; `data/` for the normalized log.
+- Imported the user's Hevy export (52 sessions, 2024-03 to 2026-10) to
+  `data/history.csv`; `data/history-summary.md` holds the analysis and proposed
+  starting loads. Analyzer gained alias exclusions and a pounds column.

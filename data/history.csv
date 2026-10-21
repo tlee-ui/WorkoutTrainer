@@ -1,0 +1,686 @@
+date,workout_title,exercise,set_index,set_type,weight_kg,reps,rpe,notes,source
+2024-03-04,Evening workout 🏋️,Bench Press (Dumbbell),0,normal,40.82,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Squat (Barbell),0,normal,102.06,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Incline Bench Press (Dumbbell),0,normal,31.75,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Leg Raise Parallel Bars,0,normal,,30,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Lat Pulldown (Cable),0,normal,49.9,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Triceps Dip,0,normal,,4,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Bench Press (Dumbbell),1,normal,40.82,6,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Squat (Barbell),1,normal,102.06,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Incline Bench Press (Dumbbell),1,normal,31.75,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Leg Raise Parallel Bars,1,normal,,30,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Lat Pulldown (Cable),1,normal,49.9,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Triceps Dip,1,normal,,4,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Squat (Barbell),2,normal,102.06,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Incline Bench Press (Dumbbell),2,normal,31.75,8,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Leg Raise Parallel Bars,2,normal,,30,,,hevy-csv
+2024-03-04,Evening workout 🏋️,Lat Pulldown (Cable),2,normal,49.9,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Overhead Press (Barbell),0,normal,29.48,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Romanian Deadlift (Dumbbell),0,normal,45.36,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Bicep Curl (Dumbbell),0,normal,20.41,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Seated Cable Row - V Grip (Cable),0,normal,45.36,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Russian Twist (Bodyweight),0,normal,,80,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Overhead Press (Barbell),1,normal,31.75,6,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Romanian Deadlift (Dumbbell),1,normal,45.36,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Bicep Curl (Dumbbell),1,normal,20.41,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Seated Cable Row - V Grip (Cable),1,normal,49.9,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Russian Twist (Bodyweight),1,normal,,75,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Overhead Press (Barbell),2,normal,29.48,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Romanian Deadlift (Dumbbell),2,normal,45.36,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Bicep Curl (Dumbbell),2,normal,20.41,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Seated Cable Row - V Grip (Cable),2,normal,45.36,8,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Russian Twist (Bodyweight),2,normal,,75,,,hevy-csv
+2024-03-06,Afternoon workout 💪,Overhead Press (Barbell),3,normal,20.41,4,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Bench Press (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Incline Bench Press (Dumbbell),0,normal,31.75,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Squat (Barbell),0,normal,83.91,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Lat Pulldown (Cable),0,normal,54.43,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Triceps Dip,0,normal,,5,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Leg Raise Parallel Bars,0,normal,,25,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Bench Press (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Incline Bench Press (Dumbbell),1,normal,31.75,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Lat Pulldown (Cable),1,normal,49.9,5,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Leg Raise Parallel Bars,1,normal,,30,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Bench Press (Barbell),2,normal,20.41,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Incline Bench Press (Dumbbell),2,normal,31.75,4,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,43.09,8,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Lat Pulldown (Cable),2,normal,49.9,5,,,hevy-csv
+2024-03-25,Afternoon workout 💪,Bench Press (Barbell),3,normal,47.63,6,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Incline Bench Press (Dumbbell),0,normal,34.02,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Bench Press (Dumbbell),0,normal,40.82,5,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Lat Pulldown (Cable),0,normal,54.43,5,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Seated Cable Row - V Grip (Cable),0,normal,45.36,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Lying Leg Raise,0,normal,,20,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Incline Bench Press (Dumbbell),1,normal,34.02,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Bench Press (Dumbbell),1,normal,36.29,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Lat Pulldown (Cable),1,normal,49.9,6,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Seated Cable Row - V Grip (Cable),1,normal,49.9,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Lying Leg Raise,1,normal,,20,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Incline Bench Press (Dumbbell),2,normal,34.02,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Bench Press (Dumbbell),2,normal,36.29,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Lat Pulldown (Cable),2,normal,45.36,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Seated Cable Row - V Grip (Cable),2,normal,49.9,8,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Lying Leg Raise,2,normal,,20,,,hevy-csv
+2024-04-01,Afternoon workout 💪,Lat Pulldown (Cable),3,normal,27.22,6,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Overhead Press (Dumbbell),0,normal,27.22,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Romanian Deadlift (Dumbbell),0,normal,45.36,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Bicep Curl (Dumbbell),0,normal,20.41,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Russian Twist (Bodyweight),0,normal,,40,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Overhead Press (Dumbbell),1,normal,27.22,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Romanian Deadlift (Dumbbell),1,normal,45.36,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,47.63,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Bicep Curl (Dumbbell),1,normal,20.41,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Russian Twist (Bodyweight),1,normal,,60,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Overhead Press (Dumbbell),2,normal,27.22,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Romanian Deadlift (Dumbbell),2,normal,45.36,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,47.63,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Bicep Curl (Dumbbell),2,normal,20.41,8,,,hevy-csv
+2024-04-03,Afternoon workout 💪,Russian Twist (Bodyweight),2,normal,,60,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Squat (Barbell),0,normal,65.77,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Inverted Row,0,normal,,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Lateral Raise (Dumbbell),0,normal,13.61,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Push Up,0,normal,,10,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Plank,0,normal,,,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Squat (Barbell),1,normal,102.06,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Inverted Row,1,normal,,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Lateral Raise (Dumbbell),1,normal,13.61,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Push Up,1,normal,,10,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Squat (Barbell),2,normal,102.06,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Inverted Row,2,normal,,9,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Lateral Raise (Dumbbell),2,normal,13.61,8,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Push Up,2,normal,,10,,,hevy-csv
+2024-04-05,Afternoon workout 💪,Squat (Barbell),3,normal,102.06,8,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Bench Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Squat (Barbell),0,normal,65.77,8,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,47.63,8,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Triceps Dip,0,normal,,4,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Leg Raise Parallel Bars,0,normal,,20,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Bench Press (Barbell),1,normal,43.09,5,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Squat (Barbell),1,normal,102.06,8,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,47.63,8,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Triceps Dip,1,normal,,4,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Leg Raise Parallel Bars,1,normal,,20,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Bench Press (Barbell),2,normal,52.16,2,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Squat (Barbell),2,normal,102.06,8,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,52.16,7,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Triceps Dip,2,normal,,2,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Leg Raise Parallel Bars,2,normal,,25,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Bench Press (Barbell),3,normal,52.16,2,,,hevy-csv
+2024-04-15,Afternoon workout 💪,Squat (Barbell),3,normal,113.4,5,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Overhead Press (Barbell),0,normal,29.48,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Lunge (Dumbbell),0,normal,31.75,10,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Romanian Deadlift (Dumbbell),0,normal,45.36,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Bicep Curl (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Lat Pulldown (Cable),0,normal,45.36,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Russian Twist (Weighted),0,normal,1.81,60,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Pull Up,0,normal,,1,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Overhead Press (Barbell),1,normal,31.75,6,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Lunge (Dumbbell),1,normal,31.75,10,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Romanian Deadlift (Dumbbell),1,normal,45.36,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Bicep Curl (Dumbbell),1,normal,22.68,7,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Lat Pulldown (Cable),1,normal,45.36,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Russian Twist (Weighted),1,normal,2.72,60,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Overhead Press (Barbell),2,normal,31.75,5,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Lunge (Dumbbell),2,normal,31.75,10,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Romanian Deadlift (Dumbbell),2,normal,45.36,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Bicep Curl (Dumbbell),2,normal,22.68,6,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Lat Pulldown (Cable),2,normal,45.36,8,,,hevy-csv
+2024-04-17,Afternoon workout 💪,Russian Twist (Weighted),2,normal,1.81,60,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Front Squat,0,normal,43.09,5,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Squat (Barbell),0,normal,83.91,5,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Inverted Row,0,normal,,8,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Lateral Raise (Dumbbell),0,normal,15.88,8,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Squat (Barbell),1,normal,83.91,5,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Inverted Row,1,normal,,8,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Lateral Raise (Dumbbell),1,normal,15.88,8,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Inverted Row,2,normal,,8,,,hevy-csv
+2024-04-19,Afternoon workout 💪,Lateral Raise (Dumbbell),2,normal,15.88,8,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Squat (Barbell),0,normal,61.23,6,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Overhead Press (Barbell),0,normal,31.75,6,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,47.63,8,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Plank,0,normal,,,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Squat (Barbell),1,normal,102.06,8,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Overhead Press (Barbell),1,normal,31.75,5,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,47.63,8,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Plank,1,normal,,,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Squat (Barbell),2,normal,102.06,8,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Overhead Press (Barbell),2,normal,31.75,4,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,47.63,8,,,hevy-csv
+2024-04-22,Afternoon workout 💪,Squat (Barbell),3,normal,102.06,8,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Bench Press (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Squat (Barbell),0,normal,61.23,6,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Bent Over Row (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Triceps Dip,0,normal,,3,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Bench Press (Barbell),1,normal,45.36,7,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Squat (Barbell),1,normal,92.99,6,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Bent Over Row (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Triceps Dip,1,normal,,3,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Bench Press (Barbell),2,normal,47.63,5,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Squat (Barbell),2,normal,92.99,6,,,hevy-csv
+2024-05-27,Evening workout 🏋️,Bent Over Row (Barbell),2,normal,43.09,6,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Deadlift (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Overhead Press (Barbell),0,normal,29.48,8,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Pull Up,0,normal,,2,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Lunge (Barbell),0,normal,31.75,10,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Deadlift (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Overhead Press (Barbell),1,normal,29.48,7,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Pull Up,1,normal,,2,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Lunge (Barbell),1,normal,36.29,10,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Deadlift (Barbell),2,normal,61.23,5,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Overhead Press (Barbell),2,normal,29.48,5,,,hevy-csv
+2024-05-29,Afternoon workout 💪,Lunge (Barbell),2,normal,36.29,10,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Squat (Barbell),0,normal,83.91,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Bench Press (Barbell),0,normal,38.56,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Triceps Dip,0,normal,,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Squat (Barbell),1,normal,92.99,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Bench Press (Barbell),1,normal,38.56,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Triceps Dip,1,normal,,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Squat (Barbell),2,normal,92.99,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Bench Press (Barbell),2,normal,43.09,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,43.09,8,,,hevy-csv
+2024-06-17,Afternoon workout 💪,Triceps Dip,2,normal,,8,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Deadlift (Barbell),0,normal,63.5,8,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Lunge (Barbell),0,normal,34.02,10,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Pull Up (Assisted),0,normal,9.98,3,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Bicep Curl (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Deadlift (Barbell),1,normal,63.5,8,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Overhead Press (Barbell),1,normal,29.48,6,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Lunge (Barbell),1,normal,34.02,10,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Pull Up (Assisted),1,normal,7.26,3,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Bicep Curl (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Deadlift (Barbell),2,normal,63.5,8,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Overhead Press (Barbell),2,normal,29.48,6,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Lunge (Barbell),2,normal,34.02,10,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Pull Up (Assisted),2,normal,7.26,2,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Bicep Curl (Dumbbell),2,normal,22.68,6,,,hevy-csv
+2024-06-19,Afternoon workout 💪,Overhead Press (Barbell),3,normal,29.48,6,,,hevy-csv
+2024-06-21,Friday,Squat (Barbell),0,normal,65.77,8,,,hevy-csv
+2024-06-21,Friday,Inverted Row,0,normal,,8,,,hevy-csv
+2024-06-21,Friday,Push Up,0,normal,,15,,,hevy-csv
+2024-06-21,Friday,Lateral Raise (Dumbbell),0,normal,13.61,8,,,hevy-csv
+2024-06-21,Friday,Plank,0,normal,,,,,hevy-csv
+2024-06-21,Friday,Squat (Barbell),1,normal,92.99,6,,,hevy-csv
+2024-06-21,Friday,Inverted Row,1,normal,,9,,,hevy-csv
+2024-06-21,Friday,Push Up,1,normal,,12,,,hevy-csv
+2024-06-21,Friday,Lateral Raise (Dumbbell),1,normal,13.61,8,,,hevy-csv
+2024-06-21,Friday,Plank,1,normal,,,,,hevy-csv
+2024-06-21,Friday,Squat (Barbell),2,normal,92.99,8,,,hevy-csv
+2024-06-21,Friday,Inverted Row,2,normal,,8,,,hevy-csv
+2024-06-21,Friday,Push Up,2,normal,,10,,,hevy-csv
+2024-06-21,Friday,Lateral Raise (Dumbbell),2,normal,13.61,8,,,hevy-csv
+2024-06-21,Friday,Plank,2,normal,,,,,hevy-csv
+2024-06-21,Friday,Squat (Barbell),3,normal,92.99,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Squat (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Bench Press (Barbell),0,normal,38.56,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Squat (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Bench Press (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Squat (Barbell),2,normal,83.91,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Bench Press (Barbell),2,normal,43.09,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Squat (Barbell),3,normal,83.91,8,,,hevy-csv
+2024-06-24,Afternoon workout 💪,Bench Press (Barbell),3,normal,43.09,4,,,hevy-csv
+2024-06-25,Tuesday,Pull Up,0,normal,,8,,Machine 7,hevy-csv
+2024-06-25,Tuesday,Deadlift (Barbell),0,normal,61.23,6,,,hevy-csv
+2024-06-25,Tuesday,Bent Over Row (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-06-25,Tuesday,Bicep Curl (Dumbbell),0,normal,22.68,6,,,hevy-csv
+2024-06-25,Tuesday,Pull Up,1,normal,,6,,Machine 7,hevy-csv
+2024-06-25,Tuesday,Deadlift (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-06-25,Tuesday,Bent Over Row (Barbell),1,normal,47.63,6,,,hevy-csv
+2024-06-25,Tuesday,Bicep Curl (Dumbbell),1,normal,18.14,8,,,hevy-csv
+2024-06-25,Tuesday,Pull Up,2,normal,,4,,Machine 7,hevy-csv
+2024-06-25,Tuesday,Deadlift (Barbell),2,normal,61.23,7,,,hevy-csv
+2024-06-25,Tuesday,Bent Over Row (Barbell),2,normal,47.63,8,,,hevy-csv
+2024-06-25,Tuesday,Bicep Curl (Dumbbell),2,normal,18.14,8,,,hevy-csv
+2024-06-26,Day 4,Overhead Press (Barbell),0,normal,29.48,6,,,hevy-csv
+2024-06-26,Day 4,Arnold Press (Dumbbell),0,normal,18.14,8,,,hevy-csv
+2024-06-26,Day 4,Upright Row (Dumbbell),0,normal,18.14,10,,,hevy-csv
+2024-06-26,Day 4,Overhead Press (Barbell),1,normal,31.75,5,,,hevy-csv
+2024-06-26,Day 4,Arnold Press (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-06-26,Day 4,Upright Row (Dumbbell),1,normal,22.68,10,,,hevy-csv
+2024-06-26,Day 4,Overhead Press (Barbell),2,normal,31.75,5,,,hevy-csv
+2024-06-26,Day 4,Arnold Press (Dumbbell),2,normal,22.68,8,,,hevy-csv
+2024-06-26,Day 4,Upright Row (Dumbbell),2,normal,22.68,10,,,hevy-csv
+2024-06-28,Day 3,Squat (Barbell),0,normal,20.41,10,,,hevy-csv
+2024-06-28,Day 3,Lunge (Dumbbell),0,normal,27.22,12,,,hevy-csv
+2024-06-28,Day 3,Romanian Deadlift (Dumbbell),0,normal,31.75,12,,,hevy-csv
+2024-06-28,Day 3,Bicep Curl (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-06-28,Day 3,Overhead Press (Barbell),0,normal,20.41,10,,,hevy-csv
+2024-06-28,Day 3,Squat (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-06-28,Day 3,Bicep Curl (Barbell),1,normal,20.41,8,,,hevy-csv
+2024-06-28,Day 3,Overhead Press (Barbell),1,normal,20.41,10,,,hevy-csv
+2024-06-28,Day 3,Squat (Barbell),2,normal,83.91,8,,,hevy-csv
+2024-06-28,Day 3,Bicep Curl (Barbell),2,normal,20.41,8,,,hevy-csv
+2024-06-28,Day 3,Overhead Press (Barbell),2,normal,20.41,10,,,hevy-csv
+2024-06-28,Day 3,Squat (Barbell),3,normal,83.91,6,,,hevy-csv
+2024-07-07,Day 1,Bench Press (Barbell),0,normal,29.48,8,,,hevy-csv
+2024-07-07,Day 1,Incline Bench Press (Dumbbell),0,normal,27.22,10,,,hevy-csv
+2024-07-07,Day 1,Triceps Dip,0,normal,,8,,,hevy-csv
+2024-07-07,Day 1,Triceps Extension (Dumbbell),0,normal,9.07,8,,,hevy-csv
+2024-07-07,Day 1,Bench Press (Barbell),1,normal,38.56,8,,,hevy-csv
+2024-07-07,Day 1,Incline Bench Press (Dumbbell),1,normal,27.22,8,,,hevy-csv
+2024-07-07,Day 1,Triceps Dip,1,normal,,7,,,hevy-csv
+2024-07-07,Day 1,Triceps Extension (Dumbbell),1,normal,11.34,8,,,hevy-csv
+2024-07-07,Day 1,Bench Press (Barbell),2,normal,43.09,8,,,hevy-csv
+2024-07-07,Day 1,Incline Bench Press (Dumbbell),2,normal,27.22,9,,,hevy-csv
+2024-07-07,Day 1,Triceps Dip,2,normal,,8,,,hevy-csv
+2024-07-07,Day 1,Triceps Extension (Dumbbell),2,normal,9.07,8,,,hevy-csv
+2024-07-07,Day 1,Bench Press (Barbell),3,normal,45.36,5,,,hevy-csv
+2024-07-08,Day 2,Pull Up,0,normal,,8,,,hevy-csv
+2024-07-08,Day 2,Deadlift (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-07-08,Day 2,Bent Over Row (Barbell),0,normal,43.09,7,,,hevy-csv
+2024-07-08,Day 2,Bicep Curl (Dumbbell),0,normal,18.14,6,,,hevy-csv
+2024-07-08,Day 2,Pull Up,1,normal,,8,,,hevy-csv
+2024-07-08,Day 2,Deadlift (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-07-08,Day 2,Bent Over Row (Barbell),1,normal,43.09,7,,,hevy-csv
+2024-07-08,Day 2,Bicep Curl (Dumbbell),1,normal,18.14,8,,,hevy-csv
+2024-07-08,Day 2,Pull Up,2,normal,,6,,,hevy-csv
+2024-07-08,Day 2,Deadlift (Barbell),2,normal,61.23,8,,,hevy-csv
+2024-07-08,Day 2,Bicep Curl (Dumbbell),2,normal,18.14,8,,,hevy-csv
+2024-07-08,Day 2,Pull Up,3,normal,,2,,,hevy-csv
+2024-07-08,Day 2,Deadlift (Barbell),3,normal,61.23,4,,,hevy-csv
+2024-07-12,Day 4,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-07-12,Day 4,Arnold Press (Dumbbell),0,normal,22.68,6,,,hevy-csv
+2024-07-12,Day 4,Upright Row (Dumbbell),0,normal,22.68,10,,,hevy-csv
+2024-07-12,Day 4,Russian Twist (Weighted),0,normal,11.34,20,,,hevy-csv
+2024-07-12,Day 4,Overhead Press (Barbell),1,normal,29.48,8,,,hevy-csv
+2024-07-12,Day 4,Arnold Press (Dumbbell),1,normal,18.14,8,,,hevy-csv
+2024-07-12,Day 4,Upright Row (Dumbbell),1,normal,27.22,10,,,hevy-csv
+2024-07-12,Day 4,Russian Twist (Weighted),1,normal,11.34,20,,,hevy-csv
+2024-07-12,Day 4,Overhead Press (Barbell),2,normal,29.48,8,,,hevy-csv
+2024-07-12,Day 4,Arnold Press (Dumbbell),2,normal,18.14,8,,,hevy-csv
+2024-07-12,Day 4,Upright Row (Dumbbell),2,normal,27.22,10,,,hevy-csv
+2024-07-12,Day 4,Russian Twist (Weighted),2,normal,11.34,20,,,hevy-csv
+2024-07-12,Day 4,Overhead Press (Barbell),3,normal,31.75,6,,,hevy-csv
+2024-07-12,Day 4,Arnold Press (Dumbbell),3,normal,18.14,8,,,hevy-csv
+2024-07-16,Day 4,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-07-16,Day 4,Bent Over Row (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-07-16,Day 4,Squat (Barbell),0,normal,20.41,10,,,hevy-csv
+2024-07-16,Day 4,Russian Twist (Weighted),0,normal,6.8,20,,,hevy-csv
+2024-07-16,Day 4,Overhead Press (Barbell),1,normal,31.75,5,,,hevy-csv
+2024-07-16,Day 4,Bent Over Row (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-07-16,Day 4,Squat (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-07-16,Day 4,Russian Twist (Weighted),1,normal,6.8,20,,,hevy-csv
+2024-07-16,Day 4,Overhead Press (Barbell),2,normal,31.75,5,,,hevy-csv
+2024-07-16,Day 4,Bent Over Row (Barbell),2,normal,43.09,8,,,hevy-csv
+2024-07-16,Day 4,Squat (Barbell),2,normal,83.91,8,,,hevy-csv
+2024-07-16,Day 4,Overhead Press (Barbell),3,normal,31.75,6,,,hevy-csv
+2024-07-16,Day 4,Squat (Barbell),3,normal,83.91,8,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Bent Over Row (Barbell),0,normal,45.36,8,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Lunge (Barbell),0,normal,38.56,15,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Overhead Press (Barbell),1,normal,22.68,5,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Bent Over Row (Barbell),1,normal,45.36,8,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Lunge (Barbell),1,normal,38.56,15,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Overhead Press (Barbell),2,normal,31.75,6,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Bent Over Row (Barbell),2,normal,45.36,8,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Lunge (Barbell),2,normal,38.56,6,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Overhead Press (Barbell),3,normal,31.75,5,,,hevy-csv
+2024-07-22,Evening workout 🏋️,Overhead Press (Barbell),4,normal,31.75,3,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bench Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Deadlift (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,18.14,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bench Press (Barbell),1,normal,29.48,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Deadlift (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bench Press (Barbell),2,normal,38.56,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Deadlift (Barbell),2,normal,61.23,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,18.14,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bench Press (Barbell),3,normal,43.09,7,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Deadlift (Barbell),3,normal,61.23,8,,,hevy-csv
+2024-07-24,Evening workout 🏋️,Bicep Curl (Dumbbell),3,normal,18.14,8,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Squat (Barbell),0,normal,20.41,10,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Arnold Press (Dumbbell),0,normal,18.14,10,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Lateral Raise (Dumbbell),0,normal,13.61,10,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Pull Up (Assisted),0,normal,18.14,5,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Squat (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Arnold Press (Dumbbell),1,normal,18.14,10,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Lateral Raise (Dumbbell),1,normal,13.61,14,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Pull Up (Assisted),1,normal,15.42,5,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Squat (Barbell),2,normal,83.91,8,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Arnold Press (Dumbbell),2,normal,18.14,10,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Lateral Raise (Dumbbell),2,normal,18.14,8,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Pull Up (Assisted),2,normal,12.7,3,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Squat (Barbell),3,normal,88.45,8,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Arnold Press (Dumbbell),3,normal,18.14,10,,,hevy-csv
+2024-07-26,Afternoon workout 💪,Lateral Raise (Dumbbell),3,normal,18.14,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Lunge (Barbell),0,normal,38.56,18,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Bent Over Row (Barbell),0,normal,47.63,6,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Overhead Press (Barbell),1,normal,29.48,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Lunge (Barbell),1,normal,38.56,18,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Bent Over Row (Barbell),1,normal,47.63,7,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Overhead Press (Barbell),2,normal,29.48,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Lunge (Barbell),2,normal,38.56,12,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Bent Over Row (Barbell),2,normal,47.63,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,22.68,8,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Overhead Press (Barbell),3,normal,29.48,4,,,hevy-csv
+2024-07-29,Evening workout 🏋️,Bicep Curl (Dumbbell),3,normal,22.68,5,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Bench Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Deadlift (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Arnold Press (Dumbbell),0,normal,18.14,8,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Bench Press (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Deadlift (Barbell),1,normal,65.77,6,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Arnold Press (Dumbbell),1,normal,18.14,8,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Bench Press (Barbell),2,normal,43.09,8,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Deadlift (Barbell),2,normal,65.77,6,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Arnold Press (Dumbbell),2,normal,22.68,6,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Bench Press (Barbell),3,normal,43.09,8,,,hevy-csv
+2024-07-31,Evening workout 🏋️,Deadlift (Barbell),3,normal,65.77,8,,,hevy-csv
+2024-08-02,Morning workout ☀️,Squat (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-08-02,Morning workout ☀️,Lateral Raise (Dumbbell),0,normal,15.88,8,,,hevy-csv
+2024-08-02,Morning workout ☀️,Triceps Dip,0,normal,,8,,,hevy-csv
+2024-08-02,Morning workout ☀️,Squat (Barbell),1,normal,83.91,8,,,hevy-csv
+2024-08-02,Morning workout ☀️,Lateral Raise (Dumbbell),1,normal,11.34,10,,,hevy-csv
+2024-08-02,Morning workout ☀️,Triceps Dip,1,normal,,4,,,hevy-csv
+2024-08-02,Morning workout ☀️,Squat (Barbell),2,normal,92.99,8,,,hevy-csv
+2024-08-02,Morning workout ☀️,Lateral Raise (Dumbbell),2,normal,11.34,10,,,hevy-csv
+2024-08-02,Morning workout ☀️,Squat (Barbell),3,normal,92.99,8,,,hevy-csv
+2024-08-02,Morning workout ☀️,Lateral Raise (Dumbbell),3,normal,11.34,10,,,hevy-csv
+2024-08-02,Morning workout ☀️,Squat (Barbell),4,normal,102.06,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Lunge (Barbell),0,normal,38.56,18,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Bent Over Row (Barbell),0,normal,47.63,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Overhead Press (Barbell),1,normal,29.48,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Lunge (Barbell),1,normal,43.09,10,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Bent Over Row (Barbell),1,normal,47.63,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Overhead Press (Barbell),2,normal,29.48,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Lunge (Barbell),2,normal,43.09,10,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Bent Over Row (Barbell),2,normal,47.63,6,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,18.14,8,,,hevy-csv
+2024-08-05,Evening workout 🏋️,Overhead Press (Barbell),3,normal,29.48,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Bench Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Deadlift (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Arnold Press (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Bench Press (Barbell),1,normal,45.36,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Deadlift (Barbell),1,normal,65.77,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Arnold Press (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Bench Press (Barbell),2,normal,45.36,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Deadlift (Barbell),2,normal,65.77,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Arnold Press (Dumbbell),2,normal,22.68,5,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Bench Press (Barbell),3,normal,45.36,8,,,hevy-csv
+2024-08-07,Evening workout 🏋️,Deadlift (Barbell),3,normal,65.77,6,,,hevy-csv
+2024-08-12,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-08-12,Evening workout 🏋️,Overhead Press (Barbell),1,normal,31.75,7,,,hevy-csv
+2024-08-12,Evening workout 🏋️,Overhead Press (Barbell),2,normal,31.75,8,,,hevy-csv
+2024-08-12,Evening workout 🏋️,Overhead Press (Barbell),3,normal,31.75,7,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Lunge (Barbell),0,normal,43.09,10,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),0,normal,22.68,16,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bent Over Row (Barbell),0,normal,43.09,8,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Overhead Press (Barbell),1,normal,31.75,6,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),1,normal,22.68,16,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bent Over Row (Barbell),1,normal,43.09,8,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Overhead Press (Barbell),2,normal,31.75,6,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),2,normal,22.68,16,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bent Over Row (Barbell),2,normal,47.63,8,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,22.68,5,,,hevy-csv
+2024-08-17,Evening workout 🏋️,Overhead Press (Barbell),3,normal,31.75,6,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Bench Press (Barbell),0,normal,20.41,10,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Deadlift (Barbell),0,normal,65.77,6,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Pull Up,0,normal,,2,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Plank,0,normal,,,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Lying Leg Raise,0,normal,,20,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Bench Press (Barbell),1,normal,47.63,8,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Deadlift (Barbell),1,normal,68.04,6,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Pull Up,1,normal,,1,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Lying Leg Raise,1,normal,,20,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Bench Press (Barbell),2,normal,47.63,8,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Deadlift (Barbell),2,normal,68.04,5,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Pull Up,2,normal,,2,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Lying Leg Raise,2,normal,,20,,,hevy-csv
+2024-08-19,Evening workout 🏋️,Bench Press (Barbell),3,normal,47.63,7,,,hevy-csv
+2024-08-21,Morning workout ☀️,Squat (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-08-21,Morning workout ☀️,Lateral Raise (Dumbbell),0,normal,13.61,10,,,hevy-csv
+2024-08-21,Morning workout ☀️,Triceps Dip,0,normal,,3,,,hevy-csv
+2024-08-21,Morning workout ☀️,Arnold Press (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-08-21,Morning workout ☀️,Russian Twist (Weighted),0,normal,11.34,10,,,hevy-csv
+2024-08-21,Morning workout ☀️,Squat (Barbell),1,normal,83.91,8,,,hevy-csv
+2024-08-21,Morning workout ☀️,Lateral Raise (Dumbbell),1,normal,13.61,10,,,hevy-csv
+2024-08-21,Morning workout ☀️,Triceps Dip,1,normal,,5,,,hevy-csv
+2024-08-21,Morning workout ☀️,Arnold Press (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-08-21,Morning workout ☀️,Russian Twist (Weighted),1,normal,11.34,10,,,hevy-csv
+2024-08-21,Morning workout ☀️,Squat (Barbell),2,normal,83.91,8,,,hevy-csv
+2024-08-21,Morning workout ☀️,Lateral Raise (Dumbbell),2,normal,13.61,10,,,hevy-csv
+2024-08-21,Morning workout ☀️,Triceps Dip,2,normal,,3,,,hevy-csv
+2024-08-21,Morning workout ☀️,Arnold Press (Dumbbell),2,normal,22.68,8,,,hevy-csv
+2024-08-21,Morning workout ☀️,Russian Twist (Weighted),2,normal,11.34,15,,,hevy-csv
+2024-08-21,Morning workout ☀️,Squat (Barbell),3,normal,83.91,8,,,hevy-csv
+2024-08-21,Morning workout ☀️,Lateral Raise (Dumbbell),3,normal,13.61,12,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),0,normal,22.68,16,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bent Over Row (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Overhead Press (Barbell),1,normal,31.75,6,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),1,normal,22.68,16,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bent Over Row (Dumbbell),1,normal,27.22,8,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Overhead Press (Barbell),2,normal,31.75,5,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),2,normal,22.68,16,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,22.68,6,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Bent Over Row (Dumbbell),2,normal,27.22,8,,,hevy-csv
+2024-09-02,Evening workout 🏋️,Overhead Press (Barbell),3,normal,29.48,4,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Bench Press (Barbell),0,normal,29.48,8,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Deadlift (Barbell),0,normal,70.31,6,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Pull Up,0,normal,,2,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Lying Leg Raise,0,normal,,20,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Bench Press (Barbell),1,normal,47.63,8,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Deadlift (Barbell),1,normal,70.31,6,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Pull Up,1,normal,,2,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Lying Leg Raise,1,normal,,20,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Bench Press (Barbell),2,normal,47.63,8,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Deadlift (Barbell),2,normal,70.31,6,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Pull Up,2,normal,,2,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Lying Leg Raise,2,normal,,20,,,hevy-csv
+2024-09-04,Evening workout 🏋️,Bench Press (Barbell),3,normal,47.63,8,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,10,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),0,normal,27.22,16,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,22.68,7,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bent Over Row (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Overhead Press (Barbell),1,normal,31.75,8,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),1,normal,27.22,16,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,22.68,7,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bent Over Row (Dumbbell),1,normal,22.68,9,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Overhead Press (Barbell),2,normal,31.75,7,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),2,normal,27.22,16,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,22.68,5,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Bent Over Row (Dumbbell),2,normal,27.22,9,,,hevy-csv
+2024-09-09,Evening workout 🏋️,Overhead Press (Barbell),3,normal,31.75,4,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Bench Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Pull Up,0,normal,,2,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Arnold Press (Dumbbell),0,normal,27.22,6,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Goblet Squat,0,normal,13.61,8,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Kettlebell Goblet Squat,0,normal,15.88,10,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Bench Press (Barbell),1,normal,49.9,6,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Pull Up,1,normal,,2,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Arnold Press (Dumbbell),1,normal,27.22,6,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Kettlebell Goblet Squat,1,normal,15.88,8,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Bench Press (Barbell),2,normal,49.9,6,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Pull Up,2,normal,,2,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Arnold Press (Dumbbell),2,normal,27.22,6,,,hevy-csv
+2024-09-11,Evening workout 🏋️,Bench Press (Barbell),3,normal,49.9,6,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,10,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Lunge (Dumbbell),0,normal,27.22,12,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,18.14,8,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Bent Over Row (Dumbbell),0,normal,27.22,10,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Overhead Press (Barbell),1,normal,31.75,5,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Lunge (Dumbbell),1,normal,27.22,12,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,13.61,8,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Bent Over Row (Dumbbell),1,normal,27.22,10,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Overhead Press (Barbell),2,normal,31.75,4,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Lunge (Dumbbell),2,normal,27.22,12,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,13.61,8,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Bent Over Row (Dumbbell),2,normal,27.22,9,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Overhead Press (Barbell),3,normal,29.48,4,,,hevy-csv
+2024-09-25,Evening workout 🏋️,Overhead Press (Barbell),4,normal,31.75,6,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Pull Up,0,normal,,2,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Pull Up (Assisted),0,normal,18.14,5,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Triceps Dip,0,normal,,4,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Bicep Curl (Dumbbell),0,normal,13.61,10,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Overhead Press (Barbell),1,normal,29.48,8,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Pull Up,1,normal,,1,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Pull Up (Assisted),1,normal,18.14,5,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Triceps Dip,1,normal,,5,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Bicep Curl (Dumbbell),1,normal,13.61,10,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Overhead Press (Barbell),2,normal,29.48,8,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Triceps Dip,2,normal,,4,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Bicep Curl (Dumbbell),2,normal,13.61,10,,,hevy-csv
+2024-10-15,Afternoon workout 💪,Overhead Press (Barbell),3,normal,29.48,4,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Dead Hang,0,normal,,,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Pull Up (Assisted),0,normal,18.14,5,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Low Row (Suspension),0,normal,,5,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Overhead Press (Barbell),1,normal,29.48,6,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Dead Hang,1,normal,,,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Pull Up (Assisted),1,normal,18.14,5,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Low Row (Suspension),1,normal,,7,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Overhead Press (Barbell),2,normal,29.48,5,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Dead Hang,2,normal,,,,,hevy-csv
+2024-11-19,Afternoon workout 💪,Overhead Press (Barbell),3,normal,29.48,5,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Low Row (Suspension),0,normal,,8,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Squat (Barbell),0,normal,61.23,8,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Overhead Press (Barbell),1,normal,29.48,7,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Low Row (Suspension),1,normal,,7,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Squat (Barbell),1,normal,61.23,8,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Overhead Press (Barbell),2,normal,29.48,5,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Low Row (Suspension),2,normal,,7,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Squat (Barbell),2,normal,61.23,8,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Overhead Press (Barbell),3,normal,29.48,8,,,hevy-csv
+2024-12-03,Evening workout 🏋️,Low Row (Suspension),3,normal,,7,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Squat (Barbell),0,normal,61.23,5,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Bench Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,38.56,6,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Triceps Dip,0,normal,,3,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Lying Leg Raise,0,normal,,20,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Squat (Barbell),1,normal,61.23,5,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Bench Press (Barbell),1,normal,38.56,5,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,38.56,8,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Lying Leg Raise,1,normal,,20,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Squat (Barbell),2,normal,61.23,5,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Bench Press (Barbell),2,normal,38.56,6,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,38.56,8,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Squat (Barbell),3,normal,61.23,5,,,hevy-csv
+2025-04-06,Afternoon workout 💪,Bench Press (Barbell),3,normal,38.56,8,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Deadlift (Barbell),0,normal,20.41,8,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,13.61,10,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),0,normal,18.14,16,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Deadlift (Barbell),1,normal,52.16,5,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Overhead Press (Barbell),1,normal,24.95,8,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,13.61,10,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),1,normal,18.14,16,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Deadlift (Barbell),2,normal,52.16,6,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Overhead Press (Barbell),2,normal,24.95,7,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,13.61,10,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Bulgarian Split Squat (Dumbbell),2,normal,18.14,16,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Deadlift (Barbell),3,normal,52.16,6,,,hevy-csv
+2025-04-14,Evening workout 🏋️,Overhead Press (Barbell),3,normal,24.95,5,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Overhead Press (Barbell),0,normal,20.41,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,24.95,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Squat (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Chin Up,0,normal,,3,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Triceps Dip,0,normal,,3,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Overhead Press (Barbell),1,normal,24.95,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,38.56,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Squat (Dumbbell),1,normal,22.68,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Overhead Press (Barbell),2,normal,24.95,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,38.56,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Squat (Dumbbell),2,normal,22.68,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Overhead Press (Barbell),3,normal,24.95,8,,,hevy-csv
+2025-04-20,Afternoon workout 💪,Bent Over Row (Barbell),3,normal,38.56,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Bench Press (Barbell),0,normal,29.48,10,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Lunge (Dumbbell),0,normal,27.22,12,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Low Row (Suspension),0,normal,,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,18.14,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Bench Press (Barbell),1,normal,38.56,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Lunge (Dumbbell),1,normal,27.22,12,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Low Row (Suspension),1,normal,,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,13.61,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Bench Press (Barbell),2,normal,43.09,6,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Lunge (Dumbbell),2,normal,27.22,12,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Low Row (Suspension),2,normal,,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,13.61,8,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Bench Press (Barbell),3,normal,43.09,6,,,hevy-csv
+2025-04-21,Evening workout 🏋️,Low Row (Suspension),3,normal,,6,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bench Press (Barbell),0,normal,29.48,10,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Squat (Barbell),0,normal,61.23,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bent Over Row (Barbell),0,normal,20.41,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bicep Curl (Dumbbell),0,normal,13.61,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bench Press (Barbell),1,normal,43.09,7,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Squat (Barbell),1,normal,61.23,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bent Over Row (Barbell),1,normal,43.09,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bicep Curl (Dumbbell),1,normal,18.14,6,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bench Press (Barbell),2,normal,43.09,7,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Squat (Barbell),2,normal,61.23,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bent Over Row (Barbell),2,normal,43.09,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bicep Curl (Dumbbell),2,normal,13.61,8,,,hevy-csv
+2025-05-07,Evening workout 🏋️,Bench Press (Barbell),3,normal,43.09,7,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Overhead Press (Barbell),0,normal,20.41,10,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Squat (Barbell),0,normal,61.23,8,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Lat Pulldown (Cable),0,normal,45.36,8,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Incline Bench Press (Barbell),0,normal,20.41,12,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Overhead Press (Barbell),1,normal,29.48,7,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Squat (Barbell),1,normal,61.23,8,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Lat Pulldown (Cable),1,normal,61.23,6,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Incline Bench Press (Barbell),1,normal,20.41,12,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Overhead Press (Barbell),2,normal,29.48,5,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Squat (Barbell),2,normal,61.23,8,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Lat Pulldown (Cable),2,normal,61.23,6,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Incline Bench Press (Barbell),2,normal,20.41,12,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Overhead Press (Barbell),3,normal,22.68,4,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Lat Pulldown (Cable),3,normal,45.36,6,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Incline Bench Press (Barbell),3,normal,20.41,8,,,hevy-csv
+2026-10-17,Afternoon workout 💪,Overhead Press (Barbell),4,normal,22.68,6,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Romanian Deadlift (Barbell),0,normal,43.09,8,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Bent Over Row (Barbell),0,normal,20.41,8,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Bicep Curl (Dumbbell),0,normal,13.61,12,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Lying Leg Curl (Machine),0,normal,18.14,10,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Romanian Deadlift (Barbell),1,normal,43.09,8,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Bent Over Row (Barbell),1,normal,29.48,12,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Bicep Curl (Dumbbell),1,normal,13.61,12,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Lying Leg Curl (Machine),1,normal,18.14,10,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Romanian Deadlift (Barbell),2,normal,43.09,8,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Bent Over Row (Barbell),2,normal,29.48,12,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Bicep Curl (Dumbbell),2,normal,13.61,12,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Lying Leg Curl (Machine),2,normal,18.14,10,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Romanian Deadlift (Barbell),3,normal,43.09,7,,,hevy-csv
+2026-10-18,Afternoon workout 💪,Bent Over Row (Barbell),3,normal,29.48,12,,,hevy-csv
+2026-10-20,Morning workout ☀️,Bench Press (Barbell),0,normal,29.48,10,,,hevy-csv
+2026-10-20,Morning workout ☀️,Arnold Press (Dumbbell),0,normal,22.68,6,,,hevy-csv
+2026-10-20,Morning workout ☀️,Triceps Extension (Dumbbell),0,normal,11.34,8,,,hevy-csv
+2026-10-20,Morning workout ☀️,Lateral Raise (Dumbbell),0,normal,9.07,12,,,hevy-csv
+2026-10-20,Morning workout ☀️,Bench Press (Barbell),1,normal,43.09,8,,,hevy-csv
+2026-10-20,Morning workout ☀️,Arnold Press (Dumbbell),1,normal,22.68,6,,,hevy-csv
+2026-10-20,Morning workout ☀️,Triceps Extension (Dumbbell),1,normal,11.34,8,,,hevy-csv
+2026-10-20,Morning workout ☀️,Lateral Raise (Dumbbell),1,normal,9.07,12,,,hevy-csv
+2026-10-20,Morning workout ☀️,Bench Press (Barbell),2,normal,43.09,8,,,hevy-csv
+2026-10-20,Morning workout ☀️,Arnold Press (Dumbbell),2,normal,22.68,5,,,hevy-csv
+2026-10-20,Morning workout ☀️,Triceps Extension (Dumbbell),2,normal,11.34,8,,,hevy-csv
+2026-10-20,Morning workout ☀️,Lateral Raise (Dumbbell),2,normal,9.07,12,,,hevy-csv
+2026-10-20,Morning workout ☀️,Bench Press (Barbell),3,normal,43.09,6,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Overhead Press (Dumbbell),0,normal,22.68,8,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Squat (Dumbbell),0,normal,22.68,10,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Reverse Lunge (Dumbbell),0,normal,13.61,16,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Lying Leg Curl (Machine),0,normal,18.14,10,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Overhead Press (Dumbbell),1,normal,22.68,6,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Squat (Dumbbell),1,normal,22.68,10,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Reverse Lunge (Dumbbell),1,normal,13.61,16,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Lying Leg Curl (Machine),1,normal,18.14,10,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Overhead Press (Dumbbell),2,normal,22.68,6,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Squat (Dumbbell),2,normal,22.68,10,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Reverse Lunge (Dumbbell),2,normal,13.61,16,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Lying Leg Curl (Machine),2,normal,18.14,10,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Overhead Press (Dumbbell),3,normal,22.68,4,,,hevy-csv
+2026-10-21,Afternoon workout 💪,Squat (Dumbbell),3,normal,22.68,10,,,hevy-csv

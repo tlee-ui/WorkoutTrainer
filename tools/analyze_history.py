@@ -124,20 +124,22 @@ def main():
     aliases = json.load(open(args.aliases))
     p("\n## Proposed starting loads for the progression tracks\n")
     p("Rule source: `templates/progression-tracks.md`, section 2 (recent data) and section 8 (returning after a layoff). Loads in kg, rounded down to 2.5 kg.\n")
-    p("| Lift | Matched exercises | Last trained | Best e1RM (kg) | Recent e1RM (kg) | Proposed top set (4 @ RPE 8) | Basis |\n|---|---|---|---|---|---|---|")
+    p("Squat, bench, deadlift, press: the top set of 4 at RPE 8. Row and pull-up or pulldown: the load for the first set of 4 x 6-8 (row) or 4 x 5-8 (pull-up) at RPE 8, per `templates/progression-tracks.md` section 1. Pounds are rounded down to 5 lb.\n")
+    p("| Lift | Matched exercises | Last trained | Best e1RM (kg) | Recent e1RM (kg) | Proposed start (kg) | Proposed start (lb) | Basis |\n|---|---|---|---|---|---|---|---|")
     for lift, names in aliases.items():
         if lift.startswith("_"):
             continue
-        matched = [ex for ex in by_ex if any(n in ex.lower() for n in names)]
+        excl = aliases.get("_exclude", {}).get(lift, [])
+        matched = [ex for ex in by_ex if any(n in ex.lower() for n in names) and not any(x in ex.lower() for x in excl)]
         sets = [r for ex in matched for r in ex_stats[ex]["sets"]]
         if not matched:
-            p(f"| {lift} | (none; edit tools/lift_aliases.json) | - | - | - | work up on first H exposure | no history |")
+            p(f"| {lift} | (none; edit tools/lift_aliases.json) | - | - | - | work up | work up | no history |")
             continue
         if not sets:
             bw = [r for ex in matched for r in by_ex[ex] if r["reps"]]
             last = max(r["date"] for r in bw) if bw else "-"
             best = max((r["reps"] for r in bw), default=0)
-            p(f"| {lift} | {', '.join(matched)} | {last} | - | - | bodyweight; best logged set {best} reps | no loaded sets; apply the added-load rule in section 2 (pull-up) |")
+            p(f"| {lift} | {', '.join(matched)} | {last} | - | - | bodyweight | best logged set {best} reps | no loaded sets; apply the added-load rule in section 2 (pull-up) |")
             continue
         last = max(r["date"] for r in sets)
         age = (today - last).days
@@ -154,7 +156,8 @@ def main():
             prop, basis = round_plate(0.85 * 0.83 * tail_e), "85% of the last block's estimated 4@8 load; first exposure at RPE 6-7 (section 8)"
         else:
             prop, basis = None, f"history is {age//30} months old: work up on the first H exposure; expect roughly {round_plate(0.70*0.83*tail_e):g}-{round_plate(0.83*tail_e):g} kg if strength is similar (reference only)"
-        p(f"| {lift} | {', '.join(matched)} | {last} | {best_e:.0f} | {f'{recent_e:.0f}' if recent_e else '-'} | {f'{prop:g}' if prop else 'work up'} | {basis} |")
+        lb = f"{math.floor(prop / 0.45359237 / 5) * 5:g}" if prop else "work up"
+        p(f"| {lift} | {', '.join(matched)} | {last} | {best_e:.0f} | {f'{recent_e:.0f}' if recent_e else '-'} | {f'{prop:g}' if prop else 'work up'} | {lb} | {basis} |")
 
     text = "\n".join(out) + "\n"
     print(text)
