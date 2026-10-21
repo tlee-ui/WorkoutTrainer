@@ -19,7 +19,7 @@ The research note behind this file (`research/mobile-workout-trackers.md`) could
 | Whether `lp()` can be made conditional on the logged RPE | **Unverified**; `custom() { ... }` blocks with `{~ ~}` and a `weights` variable exist per the new-editor blog, grammar not seen | The hold rule (section 5) |
 | Whether an exercise's weight state is shared across days | **Unverified** | V lines on Days 5-6 and the leg curl and calf raise repeats |
 | Accessory lines with no starting weight (the note says the app estimates a weight from RPE tables when the weight is omitted) | Cited for plain lines; **unverified** in combination with `dp()` | All accessory lines |
-| Added load on bodyweight lifts (pull-up `10kg`) | **Unverified** | Pull Up lines |
+| Added load on bodyweight lifts (pull-up `25lb`) | **Unverified** | Pull Up lines |
 | Exercise names | Must match the app's exercise library or be created as custom exercises (custom exercises are cited in the README summary); the names used here are guesses | Every line |
 | Rest timers and warm-up syntax | Not cited; configure in the app | Comments only |
 | Share-link URL pattern, history export format, Premium price, API | **Unverified** | Getting data back out |
@@ -43,17 +43,17 @@ Importing appears to work in the free app; the note ties Premium to the API and 
 
 ## What to adjust before the first session
 
-1. **Starting loads.** The file carries the worked example (squat 120, bench 85, deadlift 150, press 55, row 70, pull-up +10 kg). Replace them using `templates/progression-tracks.md`, section 2: 95% of a recent 5RM, or 80% of a recent 1RM, or work up on the first H exposure and type in what 4 reps at RPE 8 turned out to be. Then recompute the dependent numbers:
+1. **Starting loads.** The file carries the worked example, in pounds (squat 265, bench 185, deadlift 330, press 120, row 155, pull-up +25 lb). Replace them using `templates/progression-tracks.md`, section 2: 95% of a recent 5RM, or 80% of a recent 1RM, or work up on the first H exposure and type in what 4 reps at RPE 8 turned out to be. Then recompute the dependent numbers:
 
-   | Line | Formula | Example (squat 120) |
+   | Line | Formula | Example (squat 265) |
    |---|---|---|
-   | H back-off weight | top set x 0.93, rounded to the nearest loadable weight | 111.6 -> 112.5 |
-   | V weight (Days 5-6) | top set x 0.90, rounded | 108 -> 107.5 |
-   | Pull-up V added load | reduce until the sets land at RPE 7; 0 kg = bodyweight | +10 -> +5 |
+   | H back-off weight | top set x 0.93, rounded to the nearest loadable weight | 246.45 -> 245 |
+   | V weight (Days 5-6) | top set x 0.90, rounded | 238.5 -> 240 |
+   | Pull-up V added load | reduce until the sets land at RPE 7; 0 lb = bodyweight | +25 -> +10 |
 
-2. **kg or lb.** The file is in kg. For pounds, change every `kg` to `lb` and the increments: `lp(2.5kg)` -> `lp(5lb)`, `lp(1kg)` -> `lp(2.5lb)`, `dp(2.5kg, ...)` -> `dp(5lb, ...)`, dumbbell steps `2kg` -> `5lb`. Set the app's rounding to your plates (plate rounding is a cited feature).
+2. **lb or kg.** The file is in pounds (5 lb is about 2.3 kg; 2.5 lb about 1.1 kg). For kilograms, change every `lb` to `kg`, convert the starting weights (squat 120, bench 85, deadlift 150, press 55, row 70, pull-up +10 kg are the kilogram equivalents of the worked example) and the increments: `lp(5lb)` -> `lp(2.5kg)`, `lp(2.5lb)` -> `lp(1kg)`, `dp(5lb, ...)` -> `dp(2.5kg, ...)`, dumbbell steps `5lb` -> `2kg`. Set the app's rounding to your plates (plate rounding is a cited feature).
 3. **Exercise names.** Match each name to the app's library or create a custom exercise. The "or" alternatives in the comments are the template's substitutions.
-4. **Accessory starting loads.** Either leave the weight off and let the app estimate from the RPE target, or write the load you can lift for the bottom of the range with 2-3 reps in reserve (`progression-tracks.md`, section 11). Dumbbell increments (`2kg`) should be one step on your rack.
+4. **Accessory starting loads.** Either leave the weight off and let the app estimate from the RPE target, or write the load you can lift for the bottom of the range with 2-3 reps in reserve (`progression-tracks.md`, section 11). Dumbbell increments (`5lb`) should be one step on your rack.
 5. **Warm-ups and rest.** Configure in the app: on the first compound of each day 40% x 8, 60% x 5, 80% x 2-3 of the first set (the top set); later main lifts one feeder set at 60-70%. Rest 3-4 min after a top set (deadlift 3-5), 2-3 min between compound sets, 60-90 s on isolation.
 
 ## How the app runs the rotation
@@ -67,13 +67,13 @@ Importing appears to work in the free app; the note ties Premium to the API and 
 
 | Program rule | Rendered as | Gap | Manual fix until `custom()` is verified |
 |---|---|---|---|
-| Top set 4 @ 8 or lower: +2.5 kg (squat, deadlift) or +1 kg (bench, press). RPE 8.5-9: hold. RPE 9.5-10 or under 4 reps: hold and count a miss | `lp(2.5kg)` / `lp(1kg)` on the H line | `lp()` as understood advances when the sets are completed; it does not read RPE, so it will advance after a 4 @ 9 that the program says to hold, and it may refuse to advance if a back-off is stopped early at RPE 9 (the program says back-offs never touch the track) | After each H: if the top set was RPE 8.5 or higher, edit next week's weight back down; if you stopped back-offs early but the top set was RPE 8 or lower, edit the weight up by the increment. Keep the miss counter in your log |
+| Top set 4 @ 8 or lower: +5 lb (squat, deadlift) or +2.5 lb (bench, press). RPE 8.5-9: hold. RPE 9.5-10 or under 4 reps: hold and count a miss | `lp(5lb)` / `lp(2.5lb)` on the H line | `lp()` as understood advances when the sets are completed; it does not read RPE, so it will advance after a 4 @ 9 that the program says to hold, and it may refuse to advance if a back-off is stopped early at RPE 9 (the program says back-offs never touch the track) | After each H: if the top set was RPE 8.5 or higher, edit next week's weight back down; if you stopped back-offs early but the top set was RPE 8 or lower, edit the weight up by the increment. Keep the miss counter in your log |
 | Stall after two misses: reset 7.5% | Not encoded | | Edit the weight; the agent re-renders |
 | V sets at 90% of the **current** track | Absolute weights with no progress rule | The V weight does not follow the H weight unless the app shares state across days (unverified) | When the Day 1-4 top set moves, edit the matching Day 5-6 weight to 90% of the new track. Or ask the agent to re-render after each pass |
 | Stale-track rule: last V set RPE 6 or lower twice running, take the increment anyway | Not encoded | | Watch the logged `+` RPE on V lines |
-| Row and pull-up: fixed load, add reps until every set reaches 8 at RPE 8 or less, then +2.5 kg and back to the bottom; first set under the bottom of the range twice = drop 5% | `dp(2.5kg, 6, 8)` / `dp(2.5kg, 5, 8)` | Signature unverified; the 5% drop is not encoded | Edit the weight on a stall |
+| Row and pull-up: fixed load, add reps until every set reaches 8 at RPE 8 or less, then +5 lb and back to the bottom; first set under the bottom of the range twice = drop 5% | `dp(5lb, 6, 8)` / `dp(5lb, 5, 8)` | Signature unverified; the 5% drop is not encoded | Edit the weight on a stall |
 | Accessory double progression, drop 5% after two exposures without a rep gained | `dp(...)` | Same | Same |
-| 1 kg bench and press steps need 0.5 kg plates | `lp(1kg)` | Without fractional plates the rule is 2.5 kg every second successful exposure | Use `lp(2.5kg)` and skip every other increment by hand, or let plate rounding do it (cited feature; behaviour with 1 kg steps unverified) |
+| 2.5 lb bench and press steps need 1.25 lb plates | `lp(2.5lb)` | Without fractional plates the rule is 5 lb every second successful exposure | Use `lp(5lb)` and skip every other increment by hand, or let plate rounding do it (cited feature; behaviour with 2.5 lb steps unverified) |
 
 ## Getting data back out
 

@@ -21,3 +21,7 @@
   starting loads. Analyzer gained alias exclusions and a pounds column.
 - Added `data/track-state.md`: the live state of the six progression tracks in
   kilograms, seeded from the imported history, with the rotation pointer at L1.
+- Converted templates, progression rules, the chapter 03 worked example, and the
+  Liftosaur file from kilograms to pounds (5 lb squat and deadlift steps, 2.5 lb
+  bench and press steps). Research notes and study citations stay in their
+  source units.
