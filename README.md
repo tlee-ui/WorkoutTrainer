@@ -18,7 +18,8 @@ program can scale between 3 and 6 days without losing progress.
 | `research/` | Raw research notes written by agents. Each file covers one topic, cites its sources, and separates evidence from coaching convention. Notes are the record of what was found and are not rewritten after the fact. |
 | `guide/` | The synthesized training guide. Each chapter draws on the research notes and gives rules and numbers a lifter can act on. |
 | `tools/` | Scripts to pull or import a Hevy log into `data/history.csv` and analyze it for starting loads and training history. |
-| `data/` | The normalized training log, its summary, and `track-state.md`, the live state of the progression tracks. Raw exports are gitignored. |
+| `data/` | The normalized training log, its summary, `track-state.md` (the live state of the progression tracks), `weekly-plan.md` (this week's sessions and loads), and `checkins/` (one record per Sunday check-in). Raw exports are gitignored. |
+| `coach/` | Agent runbooks for the weekly coaching cadence: the Sunday check-in and the night-before workout brief. |
 | `templates/` | Weekly session templates for 3, 4, 5, and 6 training days, the per-lift progression rules, the rules for switching between week types, a Liftosaur export of the rotation, and a CSV log template. |
 
 ## Reading order
@@ -27,7 +28,8 @@ program can scale between 3 and 6 days without losing progress.
 2. `guide/03-flexible-scheduling.md` for how to run a 3-day week and a 6-day week on the same program.
 3. `templates/README.md` then the template for this week's day count.
 4. `guide/07-tracking-and-apps.md` to pick a mobile tracker and set up logging.
-5. `research/` when you want the evidence behind a rule.
+5. `guide/08-weekly-coaching-cadence.md` for the Sunday check-in and the night-before workout brief.
+6. `research/` when you want the evidence behind a rule.
 
 ## The program in one paragraph
 
@@ -51,6 +53,7 @@ days the week had. Shorter weeks drop accessory volume, never intensity.
 | `guide/05-exercise-selection.md` | Movement patterns, best exercises, substitutions, warm-up, technique |
 | `guide/06-recovery-nutrition-cardio.md` | Recovery, sleep, protein, concurrent training, age |
 | `guide/07-tracking-and-apps.md` | What to log, tracker app comparison, integration workflows |
+| `guide/08-weekly-coaching-cadence.md` | Sunday check-in, night-before workout brief, mid-week changes |
 
 ## Caveat on sources
 

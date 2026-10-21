@@ -25,3 +25,13 @@
   Liftosaur file from kilograms to pounds (5 lb squat and deadlift steps, 2.5 lb
   bench and press steps). Research notes and study citations stay in their
   source units.
+- Weekly coaching cadence. New research note `research/coaching-check-ins.md`
+  covers readiness questionnaires (Saw 2016; Hooper & Mackinnon 1995), RIR
+  autoregulation, and supervision (Mazzetti 2000; Fisher 2022). New chapter
+  `guide/08-weekly-coaching-cadence.md` sets out a Sunday 6:47 pm ET check-in
+  (five questions, then the guide 03 section 4.1 procedure) and a night-before
+  brief Mon-Sat at 7:47 pm ET. New `coach/` runbooks for the scheduled sessions,
+  plus `data/weekly-plan.md`, `data/checkins/` and `data/manual-log.csv` for
+  state. Results come from the Hevy API when `HEVY_API_KEY` is set, otherwise
+  from the chat. Why: the user asked for a personal-trainer rhythm; the program
+  rules are unchanged.

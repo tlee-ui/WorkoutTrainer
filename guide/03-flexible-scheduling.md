@@ -126,7 +126,7 @@ Why frequency reads "3x" everywhere: every block contains every muscle, and ever
 
 ### 4.1 Start-of-week decision procedure
 
-Do this once, before the first session of the week. It takes two minutes.
+Do this once, before the first session of the week. It takes two minutes. The Sunday check-in in `guide/08-weekly-coaching-cadence.md` runs these steps for you.
 
 1. **Count the days you can actually train this week.** If unsure between two numbers, plan the lower one; an extra day can be added at the end of the week as a split session without harm (see step 6).
 2. **Pick the template:** 3 days = `templates/3-day-week.md`; 4 = `4-day-week.md`; 5 = `5-day-week.md`; 6 = `6-day-week.md`. 2 days: section 4.6. 7 days: train 6, the seventh is cardio or rest.
