@@ -18,7 +18,7 @@
 // H exposure = 1 x 4 top set @ RPE 8, then back-offs at -7% (3 in a split session).
 // V exposure = sets at 90% of the lift's current top-set load, no top set.
 // Accessories = double progression: fixed load, reps up to the top of the range at
-// RPE 9 or less, then +5 lb (or one dumbbell step) and back to the bottom.
+// RPE 9 or less, then +5 lb (dumbbells: +2.5 lb, the rack's step) and back to the bottom.
 // Warm-up: configure in the app on the first compound of each day as 40% x 8,
 // 60% x 5, 80% x 2-3. Liftosaur's warm-up percentages are of the FIRST set's
 // weight (research note, KQ2), which here is the top set, so the ramp matches.
@@ -38,15 +38,15 @@ Cable Crunch / 3x10-15 @9+ / progress: dp(5lb, 10, 15)                 // UNVERI
 ## Day 2: U1 Upper A (bench heavy, row heavy)
 Bench Press / 1x4 185lb @8+, 3x4 170lb @7+ / progress: lp(5lb, 2)        // UNVERIFIED lp-vs-RPE; UNVERIFIED lp(increment, successes) signature: +5 lb after every second success (smallest plate 2.5 lb)
 Bent Over Row / 4x6-8 155lb @8+ / progress: dp(5lb, 6, 8)                // UNVERIFIED dp; this IS the row track (double progression)
-Incline Dumbbell Press / 3x8-12 @8+ / progress: dp(5lb, 8, 12)           // UNVERIFIED dp; 5 lb = one dumbbell step, adjust to your rack
-Dumbbell Lateral Raise / 4x12-20 @9+ / progress: dp(5lb, 12, 20)         // UNVERIFIED dp
+Incline Dumbbell Press / 3x8-12 @8+ / progress: dp(2.5lb, 8, 12)         // UNVERIFIED dp; 2.5 lb = one dumbbell step on this rack
+Dumbbell Lateral Raise / 4x12-20 @9+ / progress: dp(2.5lb, 12, 20)        // UNVERIFIED dp
 Overhead Cable Triceps Extension / 3x10-15 @9+ / progress: dp(5lb, 10, 15)  // UNVERIFIED dp
 Face Pull / 3x15-20 @9+ / progress: dp(5lb, 15, 20)                    // UNVERIFIED dp
 
 ## Day 3: L2 Lower B (deadlift heavy)
 Deadlift / 1x4 330lb @8+, 2x4 305lb @7+ / progress: lp(5lb)               // UNVERIFIED lp-vs-RPE; deadlift runs 2 back-offs in every week type
 Front Squat / 3x6-10 @8+ / progress: dp(5lb, 6, 10)                    // UNVERIFIED dp; or Hack Squat
-Walking Lunge / 3x8-12 @8+ / progress: dp(5lb, 8, 12)                    // UNVERIFIED dp; reps per leg; or Bulgarian Split Squat
+Walking Lunge / 3x8-12 @8+ / progress: dp(2.5lb, 8, 12)                   // UNVERIFIED dp; reps per leg; or Bulgarian Split Squat
 Seated Leg Curl / 3x10-15 @9+ / progress: dp(5lb, 10, 15)              // UNVERIFIED dp; UNVERIFIED whether state is shared with Day 1's leg curl
 Standing Calf Raise / 4x8-12 @9+ / progress: dp(5lb, 8, 12)            // UNVERIFIED dp
 Back Extension / 3x10-15 @8+ / progress: dp(5lb, 10, 15)               // UNVERIFIED dp; or Pallof Press
@@ -54,10 +54,10 @@ Back Extension / 3x10-15 @8+ / progress: dp(5lb, 10, 15)               // UNVERI
 ## Day 4: U2 Upper B (press heavy, pull-up heavy)
 Overhead Press / 1x4 120lb @8+, 3x4 110lb @7+ / progress: lp(5lb, 2)      // UNVERIFIED lp-vs-RPE; UNVERIFIED lp(increment, successes) signature: +5 lb every second success
 Pull Up / 4x5-8 25lb @8+ / progress: dp(5lb, 5, 8)                       // UNVERIFIED dp; UNVERIFIED how added load on a bodyweight lift is written; use Lat Pulldown if under 5 clean reps
-Dumbbell Bench Press / 3x8-12 @8+ / progress: dp(5lb, 8, 12)             // UNVERIFIED dp; or Dips
+Dumbbell Bench Press / 3x8-12 @8+ / progress: dp(2.5lb, 8, 12)            // UNVERIFIED dp; or Dips
 Reverse Pec Deck / 3x15-20 @9+ / progress: dp(5lb, 15, 20)             // UNVERIFIED dp
 Cable Lateral Raise / 3x12-20 @9+ / progress: dp(5lb, 12, 20)          // UNVERIFIED dp
-Incline Dumbbell Curl / 3x10-12 @9+ / progress: dp(5lb, 10, 12)          // UNVERIFIED dp
+Incline Dumbbell Curl / 3x10-12 @9+ / progress: dp(2.5lb, 10, 12)         // UNVERIFIED dp
 
 ## Day 5: L3 Lower C (squat volume, deadlift volume)
 Squat / 4x6 240lb @8+                                                     // V: 90% of the squat track (265 x 0.9 = 238.5 -> 240). No progress rule on purpose: UNVERIFIED whether Liftosaur shares an exercise's weight across days; edit to 90% of the track when the Day 1 top set moves (README section 5)
@@ -72,7 +72,7 @@ Bench Press / 4x6 165lb @8+                                               // V: 
 Overhead Press / 3x5 110lb @7+                                            // V: 90% of the press track (120 x 0.9 = 108 -> 110)
 Bent Over Row / 3x8-10 140lb @8+                                          // V: 90% of the row track (155 x 0.9 = 139.5 -> 140)
 Pull Up / 3x6-8 10lb @7+                                                  // V: added load reduced so the sets land at RPE 7 (or bodyweight: 0lb)
-Dumbbell Lateral Raise / 3x12-20 @9+ / progress: dp(5lb, 12, 20)         // UNVERIFIED dp
+Dumbbell Lateral Raise / 3x12-20 @9+ / progress: dp(2.5lb, 12, 20)        // UNVERIFIED dp
 Triceps Pushdown / 3x10-15 @9+ / progress: dp(5lb, 10, 15)             // UNVERIFIED dp; or Skullcrusher
 Preacher Curl / 3x10-12 @9+ / progress: dp(5lb, 10, 12)                // UNVERIFIED dp; or EZ Bar Curl
 

@@ -45,3 +45,7 @@
   and the seeded week plan were recalculated. Rationale: addendum in
   `research/periodization-and-progression.md`. Why: the user reported uneven
   load sizes they could not build with their plates.
+- Dumbbells go up in 2.5 lb steps: dumbbell accessories progress and stall-drop by
+  2.5 lb per dumbbell (`templates/progression-tracks.md` sections 9 and 11, coach
+  runbooks, `data/track-state.md`, Liftosaur `dp(2.5lb, ...)` on dumbbell lines).
+  Why: the user confirmed their dumbbell rack.
