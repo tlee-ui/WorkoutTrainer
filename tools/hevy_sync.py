@@ -24,7 +24,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 
 def run(script, *flags):
     cmd = [sys.executable, os.path.join(HERE, script), *flags]
-    print(f"\n$ {' '.join(os.path.relpath(c) if os.path.isabs(c) else c for c in cmd)}")
+    print(f"\n$ python3 {os.path.relpath(cmd[1])} {' '.join(flags)}".rstrip())
     return subprocess.call(cmd)
 
 
