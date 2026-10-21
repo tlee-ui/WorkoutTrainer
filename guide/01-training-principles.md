@@ -24,9 +24,9 @@ Population caveat: most meta-analyses pool mostly untrained or recreationally tr
 
 These numbers are the program's binding targets (design spine item 3). They are deliberately the same across muscle groups: the literature does not support muscle-by-muscle precision (FVI Q3). The fractional-counting column shows why small muscles need fewer *direct* sets to reach the same total.
 
-| Muscle group | 3-day week (sets/week) | 4-day week | 5-6-day week | Sets per session | Exposures per week | Fractional credit from compounds |
+| Muscle group | 3-day week (sets/week) | 4-day week | 5-6-day week | Sets per session | Exposures per week (minimum) | Fractional credit from compounds |
 |---|---|---|---|---|---|---|
-| Chest | 8-12 | 10-14 | 14-20 | 3-5 (3-day) / 5-8 (5-6-day) | 2 (3-day) / 2-3 (5-6-day) | None needed; presses are direct |
+| Chest | 8-12 | 10-14 | 14-20 | 3-5 (3-day) / 5-8 (5-6-day) | at least 2 (3-day) / 2-3 (5-6-day); the program's rotation gives 3 for large muscles in every week type | None needed; presses are direct |
 | Back (lats, mid-back) | 8-12 | 10-14 | 14-20 | 3-5 / 5-8 | 2 / 2-3 | Rows and pulldowns are direct |
 | Quads | 8-12 | 10-14 | 14-20 | 3-5 / 5-8 | 2 / 2-3 | Squats are direct |
 | Hamstrings and glutes | 8-12 | 10-14 | 14-20 | 3-5 / 5-8 | 2 / 2-3 | Deadlift variants count for both |
@@ -35,7 +35,7 @@ These numbers are the program's binding targets (design spine item 3). They are 
 | Biceps | 8-12 | 10-14 | 14-20 | 3-5 / 5-8 | 2 / 2-3 | Each row or pulldown set counts ~0.5 |
 | Calves, abs | 8-12 | 10-14 | 14-20 | 3-5 / 5-8 | 2 / 2-3 | Little indirect credit; usually trained at the low end |
 
-Arithmetic note: in a 3-day week with two exposures per muscle, hitting 8-12 weekly sets needs 4-5 sets per exposure; with three exposures (a full-body rotation), 3-4 sets per exposure is enough. Both stay inside the 3-5 sets-per-session band.
+Arithmetic note: in a 3-day week with two exposures per muscle, hitting 8-12 weekly sets needs 4-5 sets per exposure; with three exposures (the full-body rotation this program uses, see `guide/03-flexible-scheduling.md`), 3-4 sets per exposure is enough. Both stay inside the 3-5 sets-per-session band.
 
 Per-session ceiling: **~8-10 hard sets per muscle per session** (section 2). More days buy more weekly sets; they do not make each set more effective.
 

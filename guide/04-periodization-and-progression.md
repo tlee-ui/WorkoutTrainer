@@ -183,7 +183,7 @@ For an intermediate whose fatigue tracks life stress, reactive deloading fits be
 
 ### Counting weeks when the week length varies
 
-In this program a "week" of a mesocycle is a count of **exposures per lift**, not a calendar week. A 6-day week may finish a 3-exposure wave in one calendar week; a 3-day week takes two (FFP KQ6). 5/3/1 already works this way: a 4-week cycle takes 5+ weeks at 3 days per week. The exact counting rule is in `guide/03-flexible-scheduling.md` and `templates/progression-tracks.md`.
+In this program a "week" of a mesocycle is a count of **exposures per lift**, not a calendar week. In the rotation one pass equals one calendar week for any 3- to 6-day week, because every main lift gets its heavy and volume exposure in every week type; only a 2-day week or a missed session stretches a pass (FFP KQ6). 5/3/1 already works this way: a 4-week cycle takes 5+ weeks at 3 days per week. The exact counting rule is in `guide/03-flexible-scheduling.md` and `templates/progression-tracks.md`.
 
 ### Robust rule
 
