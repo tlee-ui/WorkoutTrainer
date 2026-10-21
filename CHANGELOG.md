@@ -12,3 +12,5 @@
   any 3-6-day week; at least 2 exposures per muscle, 3 for large muscles).
 - Research note on mobile workout trackers added (Liftosaur and Hevy Pro are the
   two apps with an agent-writable program path).
+- Chapter 07 on tracking and apps, a Liftosaur rendering of the rotation under
+  `templates/liftosaur/`, and `templates/log-template.csv`.

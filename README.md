@@ -17,14 +17,46 @@ program can scale between 3 and 6 days without losing progress.
 | --- | --- |
 | `research/` | Raw research notes written by agents. Each file covers one topic, cites its sources, and separates evidence from coaching convention. Notes are the record of what was found and are not rewritten after the fact. |
 | `guide/` | The synthesized training guide. Each chapter draws on the research notes and gives rules and numbers a lifter can act on. |
-| `templates/` | Weekly session templates for 3, 4, 5, and 6 training days, plus the rules for switching between them. |
+| `templates/` | Weekly session templates for 3, 4, 5, and 6 training days, the per-lift progression rules, the rules for switching between week types, a Liftosaur export of the rotation, and a CSV log template. |
 
 ## Reading order
 
 1. `guide/00-overview.md` for the core principles in one page.
 2. `guide/03-flexible-scheduling.md` for how to run a 3-day week and a 6-day week on the same program.
-3. `templates/` to pick a week layout.
-4. `research/` when you want the evidence behind a rule.
+3. `templates/README.md` then the template for this week's day count.
+4. `guide/07-tracking-and-apps.md` to pick a mobile tracker and set up logging.
+5. `research/` when you want the evidence behind a rule.
+
+## The program in one paragraph
+
+One fixed rotation of six half-sessions: Lower A (squat heavy), Upper A (bench and
+row heavy), Lower B (deadlift heavy), Upper B (press and pull-up heavy), Lower C
+(squat and deadlift volume), Upper C (all upper lifts volume). A 6-day week runs
+them as six sessions. A 3-day week merges each pair into a full-body session.
+Every week type completes one pass, so each main lift gets one heavy and one
+volume exposure per week and its load progression never depends on how many
+days the week had. Shorter weeks drop accessory volume, never intensity.
+
+## Guide chapters
+
+| Chapter | Topic |
+| --- | --- |
+| `guide/00-overview.md` | Ten rules and a reading map |
+| `guide/01-training-principles.md` | Volume, frequency, intensity, failure proximity, rest, maintenance dose |
+| `guide/02-program-structures.md` | Splits and named programs by days per week, with a variable-week verdict |
+| `guide/03-flexible-scheduling.md` | Running one program across 3- to 6-day weeks |
+| `guide/04-periodization-and-progression.md` | Periodization evidence, progression schemes, deloads, plateaus |
+| `guide/05-exercise-selection.md` | Movement patterns, best exercises, substitutions, warm-up, technique |
+| `guide/06-recovery-nutrition-cardio.md` | Recovery, sleep, protein, concurrent training, age |
+| `guide/07-tracking-and-apps.md` | What to log, tracker app comparison, integration workflows |
+
+## Caveat on sources
+
+The first research round was done from a sandbox that could not fetch most
+journal and program web pages directly, so the notes rely on abstracts, search
+summaries, and reputable secondary reviews. Each note flags numbers it could not
+verify against the primary source. A follow-up pass with full web access should
+verify the flagged items first.
 
 ## Contributing knowledge
 
