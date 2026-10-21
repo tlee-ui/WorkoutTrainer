@@ -21,7 +21,7 @@ Python 3, standard library only.
 | `exercise` | Exercise name as logged |
 | `set_index` | 0-based set order within the exercise |
 | `set_type` | normal, warmup, failure, drop |
-| `weight_kg` | Load in kg (bodyweight exercises: added load, or empty) |
+| `weight_kg` | Load in kg, converted from the pound values in the Hevy export (bodyweight exercises: added load, or empty). The program files and `data/track-state.md` are in pounds; the analyzer prints both. |
 | `reps` | Reps completed |
 | `rpe` | Logged RPE, if any |
 | `notes` | Exercise notes |
