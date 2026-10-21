@@ -17,6 +17,8 @@ program can scale between 3 and 6 days without losing progress.
 | --- | --- |
 | `research/` | Raw research notes written by agents. Each file covers one topic, cites its sources, and separates evidence from coaching convention. Notes are the record of what was found and are not rewritten after the fact. |
 | `guide/` | The synthesized training guide. Each chapter draws on the research notes and gives rules and numbers a lifter can act on. |
+| `tools/` | Scripts to pull or import a Hevy log into `data/history.csv` and analyze it for starting loads and training history. |
+| `data/` | The normalized training log and its summary. Raw exports are gitignored. |
 | `templates/` | Weekly session templates for 3, 4, 5, and 6 training days, the per-lift progression rules, the rules for switching between week types, a Liftosaur export of the rotation, and a CSV log template. |
 
 ## Reading order

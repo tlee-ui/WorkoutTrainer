@@ -189,6 +189,10 @@ date,session,exercise,set,load,reps,rpe,notes
 
 ---
 
+## Repository tooling
+
+The scripts in `tools/` implement the import side of the loop above: `hevy_pull.py` (API), `hevy_csv_import.py` (app export), and `analyze_history.py` (per-exercise e1RM history and proposed starting loads). See `tools/README.md`.
+
 ## Sources
 
 - `research/mobile-workout-trackers.md` (2026-10-21): KQ1 (per-app profiles, prices, export), KQ2 (Liftoscript syntax; Hevy API operations), KQ3 (any-order rotation; RPE/RIR logging), KQ4 (sentiment, sync complaints), KQ5 (top-3 recommendation and integration paths).

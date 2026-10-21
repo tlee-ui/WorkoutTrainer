@@ -1,0 +1,9 @@
+{
+  "_comment": "Maps this program's six main lifts to exercise names as they appear in a Hevy log. Matching is case-insensitive substring on the normalized exercise title. Edit to match your own exercise names; run tools/analyze_history.py --list-exercises to see them.",
+  "squat": ["squat (barbell)", "back squat", "barbell squat", "squat (bb)"],
+  "bench": ["bench press (barbell)", "barbell bench press", "flat bench press", "bench press (bb)"],
+  "deadlift": ["deadlift (barbell)", "barbell deadlift", "conventional deadlift", "sumo deadlift"],
+  "press": ["overhead press (barbell)", "strict military press", "military press", "shoulder press (barbell)", "standing barbell press", "overhead press (bb)"],
+  "row": ["bent over row (barbell)", "barbell row", "pendlay row", "bent over row (bb)"],
+  "pullup": ["pull up", "pull-up", "pullup", "chin up", "chin-up", "weighted pull up", "lat pulldown"]
+}

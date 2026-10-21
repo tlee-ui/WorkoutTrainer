@@ -14,3 +14,5 @@
   two apps with an agent-writable program path).
 - Chapter 07 on tracking and apps, a Liftosaur rendering of the rotation under
   `templates/liftosaur/`, and `templates/log-template.csv`.
+- Added `tools/`: Hevy API pull, Hevy CSV import, history analysis that proposes
+  starting loads per the progression tracks; `data/` for the normalized log.

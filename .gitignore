@@ -2,3 +2,5 @@
 *.swp
 research_notes/
 reports/
+data/raw/
+*.env
