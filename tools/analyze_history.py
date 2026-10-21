@@ -40,6 +40,11 @@ def load_history(path):
     rows = []
     with open(path, newline="") as f:
         for r in csv.DictReader(f):
+            # Accept the manual log template too: 'session' and 'load_lb' instead of 'workout_title' and 'weight_kg'.
+            if "workout_title" not in r and "session" in r:
+                r["workout_title"] = r["session"]
+            if "weight_kg" not in r and "load_lb" in r:
+                r["weight_kg"] = str(float(r["load_lb"]) * 0.45359237) if r["load_lb"] not in ("", None) else ""
             try:
                 d = dt.date.fromisoformat(r["date"][:10])
             except ValueError:
